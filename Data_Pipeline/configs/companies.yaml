@@ -20,3 +20,7 @@ companies:
   - ticker: TSLA
     name: Tesla Inc.
     cik: "0001318605"
+
+  - ticker: NVDA
+    name: NVIDIA Corporation
+    cik: "0001045810"

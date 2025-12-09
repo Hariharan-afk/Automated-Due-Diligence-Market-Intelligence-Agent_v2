@@ -34,6 +34,10 @@ from src.utils.table_summarizer import GroqTableSummarizer
 from src.data_storage.table_store import TableStore
 from src.utils.logging_config import get_logger
 
+# Validation and Bias Mitigation
+from src.validation import DataValidator
+from src.bias import CoverageTracker
+
 logger = get_logger(__name__)
 
 
@@ -452,6 +456,82 @@ def main():
     
     # Save
     filepath = fetcher.save_data(args.ticker, args.year, result)
+    
+    # ========================================
+    # POST-PROCESSING: Validation & Bias Tracking
+    # ========================================
+    
+    # 1. VALIDATE DATA
+    logger.info(f"\n{'='*70}")
+    logger.info("VALIDATING DATA QUALITY")
+    logger.info(f"{'='*70}")
+    
+    validator = DataValidator()
+    tables_dir = output_dir / "tables"
+    validation_results = validator.run_all_validations(result, tables_dir)
+    
+    # Print validation summary
+    if validation_results['overall_valid']:
+        logger.info("✅ All validation checks passed!")
+    else:
+        logger.warning("⚠️ Some validation checks failed:")
+        for issue in validation_results['critical_issues'][:5]:
+            logger.warning(f"  - {issue}")
+    
+    # Save validation report
+    validation_file = filepath.parent / f"{filepath.stem}_validation.json"
+    with open(validation_file, 'w') as f:
+        json.dump(validation_results, f, indent=2)
+    logger.info(f"Validation report saved: {validation_file}")
+    
+    # 2. TRACK COVERAGE FOR BIAS MITIGATION
+    logger.info(f"\n{'='*70}")
+    logger.info("TRACKING COVERAGE METRICS")
+    logger.info(f"{'='*70}")
+    
+    # Initialize coverage tracker
+    bias_config_dir = base_dir / "bias_config"
+    bias_config_dir.mkdir(parents=True, exist_ok=True)
+    
+    coverage_tracker = CoverageTracker(bias_config_dir / "coverage_metrics.json")
+    
+    # Combine all chunks for tracking
+    all_chunks = []
+    all_chunks.extend(result.get('sec', {}).get('chunks', []))
+    all_chunks.extend(result.get('wikipedia', {}).get('chunks', []))
+    all_chunks.extend(result.get('news', {}).get('chunks', []))
+    
+    # Get company name
+    company_name = result.get('sec', {}).get('filing_metadata', {}).get('company', args.ticker)
+    num_tables = result.get('sec', {}).get('num_tables', 0)
+    
+    # Track coverage
+    coverage_metrics = coverage_tracker.track_company(
+        ticker=args.ticker,
+        company_name=company_name,
+        chunks=all_chunks,
+        num_tables=num_tables,
+        metadata={'year': args.year, 'file': filepath.name}
+    )
+    
+    logger.info(f"Coverage tracked: {coverage_metrics['total_chunks']} chunks, completeness={coverage_metrics['completeness_score']:.2f}")
+    
+    # Print summary stats
+    summary_stats = coverage_tracker.get_summary_stats()
+    if summary_stats['total_companies'] > 1:
+        logger.info(f"\nGlobal Coverage Stats (across {summary_stats['total_companies']} companies):")
+        logger.info(f"  Average chunks: {summary_stats['avg_total_chunks']:.1f}")
+        logger.info(f"  Your company: {coverage_metrics['total_chunks']} chunks")
+        ratio = coverage_metrics['total_chunks'] / summary_stats['avg_total_chunks']
+        logger.info(f"  Coverage ratio: {ratio:.2f}x average")
+    
+    # FINAL SUMMARY
+    logger.info(f"\n{'='*70}")
+    logger.info("COMPLETE!")
+    logger.info(f"{'='*70}")
+    logger.info(f"✅ Data saved: {filepath}")
+    logger.info(f"✅ Validation: {'PASSED' if validation_results['overall_valid'] else 'WARNINGS'}")
+    logger.info(f"✅ Coverage tracked: {coverage_metrics['total_chunks']} chunks")
     logger.info(f"\nDone! Data saved to: {filepath}")
 
 
