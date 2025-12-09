@@ -1,0 +1,1066 @@
+2025-12-09 00:02:01 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:02:33 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:04:23 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:05:14 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:05:37 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:06:04 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:06:05 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:06:05 | __main__                       | INFO     | SINGLE COMPANY DATA FETCHER
+2025-12-09 00:06:05 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:06:05 | __main__                       | INFO     | Ticker: AAPL
+2025-12-09 00:06:05 | __main__                       | INFO     | Year: 2024
+2025-12-09 00:06:05 | __main__                       | INFO     | Output: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data
+2025-12-09 00:06:05 | __main__                       | INFO     | Loaded environment from: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\.env
+2025-12-09 00:08:33 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:08:33 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:08:33 | __main__                       | INFO     | SINGLE COMPANY DATA FETCHER
+2025-12-09 00:08:33 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:08:33 | __main__                       | INFO     | Ticker: AAPL
+2025-12-09 00:08:33 | __main__                       | INFO     | Year: 2024
+2025-12-09 00:08:33 | __main__                       | INFO     | Output: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data
+2025-12-09 00:08:33 | __main__                       | INFO     | Loaded environment from: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\.env
+2025-12-09 00:08:34 | edgar.core                     | INFO     | Identity of the Edgar REST client set to [surajonlyforgames@gmail.com]
+2025-12-09 00:08:34 | src.data_ingestion.sec_fetcher | INFO     | SECFetcher initialized with edgartools (identity: surajonlyforgames@gmail.com)
+2025-12-09 00:08:34 | wikipediaapi                   | INFO     | Wikipedia: language=en, user_agent: DataPipeline/1.0 (Educational Project) (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-12-09 00:08:34 | src.data_ingestion.wikipedia_fetcher | INFO     | WikipediaFetcher initialized (Wikipedia-API library, English only)
+2025-12-09 00:08:34 | __main__                       | WARNING  | NEWSAPI_KEY not found - news fetching disabled
+2025-12-09 00:08:34 | src.data_processing.chunker    | INFO     | TextChunker initialized: 800 tokens (exact), overlap: 100 tokens (tiktoken)
+2025-12-09 00:08:34 | src.utils.table_summarizer     | INFO     | Initialized GroqTableSummarizer with model: llama-3.1-8b-instant
+2025-12-09 00:08:34 | src.data_processing.table_processor | INFO     | Initialized TableProcessor (min_table_size=0)
+2025-12-09 00:08:34 | src.data_storage.table_store   | INFO     | TableStore initialized at: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\tables
+2025-12-09 00:08:34 | __main__                       | INFO     | Table processing enabled (Groq)
+2025-12-09 00:08:34 | __main__                       | INFO     | SingleCompanyFetcher initialized
+2025-12-09 00:08:34 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:08:34 | __main__                       | INFO     | FETCHING SEC DATA: AAPL 10-K 2024
+2025-12-09 00:08:34 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:10:42 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:10:42 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:10:42 | __main__                       | INFO     | SINGLE COMPANY DATA FETCHER
+2025-12-09 00:10:42 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:10:42 | __main__                       | INFO     | Ticker: AAPL
+2025-12-09 00:10:42 | __main__                       | INFO     | Year: 2024
+2025-12-09 00:10:42 | __main__                       | INFO     | Output: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data
+2025-12-09 00:10:42 | __main__                       | INFO     | Loaded environment from: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\.env
+2025-12-09 00:10:42 | edgar.core                     | INFO     | Identity of the Edgar REST client set to [surajonlyforgames@gmail.com]
+2025-12-09 00:10:42 | src.data_ingestion.sec_fetcher | INFO     | SECFetcher initialized with edgartools (identity: surajonlyforgames@gmail.com)
+2025-12-09 00:10:42 | wikipediaapi                   | INFO     | Wikipedia: language=en, user_agent: DataPipeline/1.0 (Educational Project) (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-12-09 00:10:42 | src.data_ingestion.wikipedia_fetcher | INFO     | WikipediaFetcher initialized (Wikipedia-API library, English only)
+2025-12-09 00:10:42 | __main__                       | WARNING  | NEWSAPI_KEY not found - news fetching disabled
+2025-12-09 00:10:43 | src.data_processing.chunker    | INFO     | TextChunker initialized: 800 tokens (exact), overlap: 100 tokens (tiktoken)
+2025-12-09 00:10:43 | src.utils.table_summarizer     | INFO     | Initialized GroqTableSummarizer with model: llama-3.1-8b-instant
+2025-12-09 00:10:43 | src.data_processing.table_processor | INFO     | Initialized TableProcessor (min_table_size=0)
+2025-12-09 00:10:43 | src.data_storage.table_store   | INFO     | TableStore initialized at: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\tables
+2025-12-09 00:10:43 | __main__                       | INFO     | Table processing enabled (Groq)
+2025-12-09 00:10:43 | __main__                       | INFO     | SingleCompanyFetcher initialized
+2025-12-09 00:10:43 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:10:43 | __main__                       | INFO     | FETCHING SEC DATA: AAPL 10-K 2024
+2025-12-09 00:10:43 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:10:43 | src.data_ingestion.sec_fetcher | INFO     | Fetching filings for CIK 0000320193: ['10-K'] from 2024-01-01
+2025-12-09 00:10:43 | httpxthrottlecache.filecache.transport | INFO     | cache_dir=C:\Users\suraj\.edgar\_tcache
+2025-12-09 00:10:43 | httpxthrottlecache.filecache.transport | INFO     | No cache policy for data.sec.gov:///submissions/CIK0000320193.json, not retrieving from cache
+2025-12-09 00:10:43 | httpxthrottlecache.ratelimiter | INFO     | Making HTTP Request <Request('GET', 'https://data.sec.gov/submissions/CIK0000320193.json')>
+2025-12-09 00:10:43 | httpx                          | INFO     | HTTP Request: GET https://data.sec.gov/submissions/CIK0000320193.json "HTTP/1.1 200 OK"
+2025-12-09 00:10:43 | src.data_ingestion.sec_fetcher | INFO     | Found company: Apple Inc.
+2025-12-09 00:10:43 | httpxthrottlecache.filecache.transport | INFO     | No cache policy for data.sec.gov:///submissions/CIK0000320193-submissions-001.json, not retrieving from cache
+2025-12-09 00:10:43 | httpxthrottlecache.ratelimiter | INFO     | Making HTTP Request <Request('GET', 'https://data.sec.gov/submissions/CIK0000320193-submissions-001.json')>
+2025-12-09 00:10:44 | httpx                          | INFO     | HTTP Request: GET https://data.sec.gov/submissions/CIK0000320193-submissions-001.json "HTTP/1.1 200 OK"
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     | Found 1 filings
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     | Processing filing 1/1: 10-K on 2024-11-01
+2025-12-09 00:10:44 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:10:44 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/000032019324000123/0000320193-24-000123.txt matched /Archives/edgar/data, using value True
+2025-12-09 00:10:44 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-000032019324000123-0000320193-24-000123.txt
+2025-12-09 00:10:44 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/0000320193-24-000123.txt "HTTP/1.1 200 OK"
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |   Got document object: TenK
+2025-12-09 00:10:44 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:10:44 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/0000320193-24-000123-index.html matched /Archives/edgar/data, using value True
+2025-12-09 00:10:44 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-0000320193-24-000123-index.html
+2025-12-09 00:10:44 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/0000320193-24-000123-index.html "HTTP/1.1 200 OK"
+2025-12-09 00:10:44 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:10:44 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm matched /Archives/edgar/data, using value True
+2025-12-09 00:10:44 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-000032019324000123-aapl-20240928.htm
+2025-12-09 00:10:44 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm "HTTP/1.1 200 OK"
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |   Found 23 items: ['Item 1', 'Item 1A', 'Item 1B', 'Item 1C', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7', 'Item 7A', 'Item 8', 'Item 9', 'Item 9A', 'Item 9B', 'Item 9C', 'Item 10', 'Item 11', 'Item 12', 'Item 13', 'Item 14', 'Item 15', 'Item 16']
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1: Business (15710 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1A: Risk Factors (68784 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1C: Cybersecurity (2738 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 2: Properties (486 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 3: Legal Proceedings (4341 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 5: Market for Registrant's Common Equity (4894 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 7: Management's Discussion and Analysis (MD&A) (18324 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 7A: Quantitative and Qualitative Disclosures About Market Risk (3267 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 8: Financial Statements (102747 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9: Controls and Procedures (101 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9A: Controls and Procedures (4500 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9B: Other Information (1344 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 10: Directors, Executive Officers, and Corporate Governance (1033 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 11: Executive Compensation (159 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 12: Security Ownership of Certain Beneficial Owners and Management (231 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 13: Certain Relationships and Related Transactions, and Director Independence (210 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 14: Principal Accounting Fees and Services (211 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 15: Exhibits, Financial Statement Schedules (30533 chars)
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     |   ✓ Extracted 18 sections, 259,613 total characters
+2025-12-09 00:10:44 | src.data_ingestion.sec_fetcher | INFO     | Successfully fetched 1/1 filings
+2025-12-09 00:10:44 | __main__                       | INFO     | Found 10-K: 2024-11-01, Accession: 0000320193-24-000123
+2025-12-09 00:10:44 | __main__                       | INFO     | Processing 0 sections...
+2025-12-09 00:10:44 | __main__                       | INFO     | 
+Total SEC chunks: 0
+2025-12-09 00:10:44 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:10:44 | __main__                       | INFO     | FETCHING WIKIPEDIA DATA: AAPL
+2025-12-09 00:10:44 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:10:44 | src.data_ingestion.wikipedia_fetcher | INFO     | Fetching Wikipedia page: Apple Inc.
+2025-12-09 00:10:44 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Apple Inc.&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-12-09 00:11:04 | src.data_ingestion.base_fetcher | WARNING  | Fetch attempt 1/3 failed: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?format=json&redirects=1&action=query&prop=info&titles=Apple+Inc.&inprop=protection%7Ctalkid%7Cwatched%7Cwatchers%7Cvisitingwatchers%7Cnotificationtimestamp%7Csubjectid%7Curl%7Creadable%7Cpreload%7Cdisplaytitle%7Cvarianttitles (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1bddc01d150>, 'Connection to en.wikipedia.org timed out. (connect timeout=10.0)'))
+2025-12-09 00:11:04 | src.data_ingestion.base_fetcher | INFO     | Retrying in 1 seconds...
+2025-12-09 00:11:05 | src.data_ingestion.wikipedia_fetcher | INFO     | Fetching Wikipedia page: Apple Inc.
+2025-12-09 00:11:05 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Apple Inc.&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-12-09 00:11:06 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Apple Inc.&explaintext=1&exsectionformat=wiki
+2025-12-09 00:11:06 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=categories&titles=Apple Inc.&cllimit=500
+2025-12-09 00:11:06 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500
+2025-12-09 00:11:07 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|Disney_Movies_Anywhere
+2025-12-09 00:11:07 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|List_of_the_largest_software_companies
+2025-12-09 00:11:07 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|State_Street_Corporation
+2025-12-09 00:11:07 | src.data_ingestion.wikipedia_fetcher | INFO     | Fetched Wikipedia: Apple Inc. (ID: 856, size: 86376 chars)
+2025-12-09 00:11:07 | __main__                       | INFO     | Fetched: Apple Inc.
+2025-12-09 00:11:07 | __main__                       | INFO     | Content: 86376 chars
+2025-12-09 00:11:07 | __main__                       | INFO     | Created 31 Wikipedia chunks
+2025-12-09 00:11:07 | __main__                       | WARNING  | News fetching disabled (no NEWSAPI_KEY)
+2025-12-09 00:11:07 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:11:07 | __main__                       | INFO     | SUMMARY
+2025-12-09 00:11:07 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:11:07 | __main__                       | INFO     | SEC chunks:       0
+2025-12-09 00:11:07 | __main__                       | INFO     | SEC tables:       0
+2025-12-09 00:11:07 | __main__                       | INFO     | Wikipedia chunks: 31
+2025-12-09 00:11:07 | __main__                       | INFO     | News chunks:      0
+2025-12-09 00:11:07 | __main__                       | INFO     | Total chunks:     31
+2025-12-09 00:11:07 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:11:07 | __main__                       | INFO     | SAVED: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\AAPL_2024_all_data_20251209_001107.json
+2025-12-09 00:11:07 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:11:07 | __main__                       | INFO     | 
+Done! Data saved to: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\AAPL_2024_all_data_20251209_001107.json
+2025-12-09 00:15:32 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:15:33 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:15:33 | __main__                       | INFO     | SINGLE COMPANY DATA FETCHER
+2025-12-09 00:15:33 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:15:33 | __main__                       | INFO     | Ticker: AAPL
+2025-12-09 00:15:33 | __main__                       | INFO     | Year: 2024
+2025-12-09 00:15:33 | __main__                       | INFO     | Output: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data
+2025-12-09 00:15:33 | __main__                       | INFO     | Loaded environment from: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\.env
+2025-12-09 00:15:33 | edgar.core                     | INFO     | Identity of the Edgar REST client set to [surajonlyforgames@gmail.com]
+2025-12-09 00:15:33 | src.data_ingestion.sec_fetcher | INFO     | SECFetcher initialized with edgartools (identity: surajonlyforgames@gmail.com)
+2025-12-09 00:15:33 | wikipediaapi                   | INFO     | Wikipedia: language=en, user_agent: DataPipeline/1.0 (Educational Project) (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-12-09 00:15:33 | src.data_ingestion.wikipedia_fetcher | INFO     | WikipediaFetcher initialized (Wikipedia-API library, English only)
+2025-12-09 00:15:33 | __main__                       | WARNING  | NEWSAPI_KEY not found - news fetching disabled
+2025-12-09 00:15:34 | src.data_processing.chunker    | INFO     | TextChunker initialized: 800 tokens (exact), overlap: 100 tokens (tiktoken)
+2025-12-09 00:15:34 | src.utils.table_summarizer     | INFO     | Initialized GroqTableSummarizer with model: llama-3.1-8b-instant
+2025-12-09 00:15:34 | src.data_processing.table_processor | INFO     | Initialized TableProcessor (min_table_size=0)
+2025-12-09 00:15:34 | src.data_storage.table_store   | INFO     | TableStore initialized at: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\tables
+2025-12-09 00:15:34 | __main__                       | INFO     | Table processing enabled (Groq)
+2025-12-09 00:15:34 | __main__                       | INFO     | SingleCompanyFetcher initialized
+2025-12-09 00:15:34 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:15:34 | __main__                       | INFO     | FETCHING SEC DATA: AAPL 10-K 2024
+2025-12-09 00:15:34 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:15:34 | src.data_ingestion.sec_fetcher | INFO     | Fetching filings for CIK 0000320193: ['10-K'] from 2024-01-01
+2025-12-09 00:15:34 | httpxthrottlecache.filecache.transport | INFO     | cache_dir=C:\Users\suraj\.edgar\_tcache
+2025-12-09 00:15:34 | httpxthrottlecache.filecache.transport | INFO     | No cache policy for data.sec.gov:///submissions/CIK0000320193.json, not retrieving from cache
+2025-12-09 00:15:34 | httpxthrottlecache.ratelimiter | INFO     | Making HTTP Request <Request('GET', 'https://data.sec.gov/submissions/CIK0000320193.json')>
+2025-12-09 00:15:34 | httpx                          | INFO     | HTTP Request: GET https://data.sec.gov/submissions/CIK0000320193.json "HTTP/1.1 200 OK"
+2025-12-09 00:15:34 | src.data_ingestion.sec_fetcher | INFO     | Found company: Apple Inc.
+2025-12-09 00:15:34 | httpxthrottlecache.filecache.transport | INFO     | No cache policy for data.sec.gov:///submissions/CIK0000320193-submissions-001.json, not retrieving from cache
+2025-12-09 00:15:34 | httpxthrottlecache.ratelimiter | INFO     | Making HTTP Request <Request('GET', 'https://data.sec.gov/submissions/CIK0000320193-submissions-001.json')>
+2025-12-09 00:15:34 | httpx                          | INFO     | HTTP Request: GET https://data.sec.gov/submissions/CIK0000320193-submissions-001.json "HTTP/1.1 200 OK"
+2025-12-09 00:15:34 | src.data_ingestion.sec_fetcher | INFO     | Found 1 filings
+2025-12-09 00:15:34 | src.data_ingestion.sec_fetcher | INFO     | Processing filing 1/1: 10-K on 2024-11-01
+2025-12-09 00:15:34 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:15:34 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/000032019324000123/0000320193-24-000123.txt matched /Archives/edgar/data, using value True
+2025-12-09 00:15:34 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-000032019324000123-0000320193-24-000123.txt
+2025-12-09 00:15:35 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/0000320193-24-000123.txt "HTTP/1.1 200 OK"
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |   Got document object: TenK
+2025-12-09 00:15:35 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:15:35 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/0000320193-24-000123-index.html matched /Archives/edgar/data, using value True
+2025-12-09 00:15:35 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-0000320193-24-000123-index.html
+2025-12-09 00:15:35 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/0000320193-24-000123-index.html "HTTP/1.1 200 OK"
+2025-12-09 00:15:35 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:15:35 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm matched /Archives/edgar/data, using value True
+2025-12-09 00:15:35 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-000032019324000123-aapl-20240928.htm
+2025-12-09 00:15:35 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm "HTTP/1.1 200 OK"
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |   Found 23 items: ['Item 1', 'Item 1A', 'Item 1B', 'Item 1C', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7', 'Item 7A', 'Item 8', 'Item 9', 'Item 9A', 'Item 9B', 'Item 9C', 'Item 10', 'Item 11', 'Item 12', 'Item 13', 'Item 14', 'Item 15', 'Item 16']
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1: Business (15710 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1A: Risk Factors (68784 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1C: Cybersecurity (2738 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 2: Properties (486 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 3: Legal Proceedings (4341 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 5: Market for Registrant's Common Equity (4894 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 7: Management's Discussion and Analysis (MD&A) (18324 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 7A: Quantitative and Qualitative Disclosures About Market Risk (3267 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 8: Financial Statements (102747 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9: Controls and Procedures (101 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9A: Controls and Procedures (4500 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9B: Other Information (1344 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 10: Directors, Executive Officers, and Corporate Governance (1033 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 11: Executive Compensation (159 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 12: Security Ownership of Certain Beneficial Owners and Management (231 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 13: Certain Relationships and Related Transactions, and Director Independence (210 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 14: Principal Accounting Fees and Services (211 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 15: Exhibits, Financial Statement Schedules (30533 chars)
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     |   ✓ Extracted 18 sections, 259,613 total characters
+2025-12-09 00:15:35 | src.data_ingestion.sec_fetcher | INFO     | Successfully fetched 1/1 filings
+2025-12-09 00:15:35 | __main__                       | INFO     | Found 10-K: 2024-11-01, Accession: 0000320193-24-000123
+2025-12-09 00:15:35 | __main__                       | INFO     | Processing 18 sections...
+2025-12-09 00:15:35 | __main__                       | INFO     |   Processing 1: Business
+2025-12-09 00:15:35 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:35 | __main__                       | INFO     |     Created 6 chunks
+2025-12-09 00:15:35 | __main__                       | INFO     |   Processing 1A: Risk Factors
+2025-12-09 00:15:35 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:35 | __main__                       | INFO     |     Created 24 chunks
+2025-12-09 00:15:35 | __main__                       | INFO     |   Processing 1C: Cybersecurity
+2025-12-09 00:15:35 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:35 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:35 | __main__                       | INFO     |   Processing 2: Properties
+2025-12-09 00:15:35 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:35 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:35 | __main__                       | INFO     |   Processing 3: Legal Proceedings
+2025-12-09 00:15:35 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:35 | __main__                       | INFO     |     Created 2 chunks
+2025-12-09 00:15:35 | __main__                       | INFO     |   Processing 5: Market for Registrant's Common Equity
+2025-12-09 00:15:35 | src.data_processing.table_processor | INFO     | Found 2 tables in 5 section
+2025-12-09 00:15:36 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:36 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:36 | src.data_processing.table_processor | INFO     | Processed 2 tables in 5 section
+2025-12-09 00:15:36 | __main__                       | INFO     |     Found 2 tables
+2025-12-09 00:15:36 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:36 | __main__                       | INFO     |   Processing 7: Management's Discussion and Analysis (MD&A)
+2025-12-09 00:15:36 | src.data_processing.table_processor | INFO     | Found 6 tables in 7 section
+2025-12-09 00:15:36 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:37 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:37 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:37 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:37 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:38 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:38 | src.data_processing.table_processor | INFO     | Processed 6 tables in 7 section
+2025-12-09 00:15:38 | __main__                       | INFO     |     Found 6 tables
+2025-12-09 00:15:38 | __main__                       | INFO     |     Created 7 chunks
+2025-12-09 00:15:38 | __main__                       | INFO     |   Processing 7A: Quantitative and Qualitative Disclosures About Market Risk
+2025-12-09 00:15:38 | src.data_processing.table_processor | INFO     | Found 1 tables in 7A section
+2025-12-09 00:15:38 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:38 | src.data_processing.table_processor | INFO     | Processed 1 tables in 7A section
+2025-12-09 00:15:38 | __main__                       | INFO     |     Found 1 tables
+2025-12-09 00:15:38 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:38 | __main__                       | INFO     |   Processing 8: Financial Statements
+2025-12-09 00:15:38 | src.data_processing.table_processor | INFO     | Found 35 tables in 8 section
+2025-12-09 00:15:38 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:39 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:39 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:39 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:40 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:41 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:41 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:41 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:42 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:42 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:42 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:43 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:43 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:43 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:43 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:44 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:44 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:44 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:45 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:45 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:45 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:45 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:46 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:46 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:46 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:47 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:47 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:47 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:48 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:48 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:48 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:48 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:49 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:49 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:49 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:49 | src.data_processing.table_processor | INFO     | Processed 35 tables in 8 section
+2025-12-09 00:15:49 | __main__                       | INFO     |     Found 35 tables
+2025-12-09 00:15:49 | __main__                       | INFO     |     Created 19 chunks
+2025-12-09 00:15:49 | __main__                       | INFO     |   Processing 9: Controls and Procedures
+2025-12-09 00:15:49 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:49 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:49 | __main__                       | INFO     |   Processing 9A: Controls and Procedures
+2025-12-09 00:15:49 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:49 | __main__                       | INFO     |     Created 2 chunks
+2025-12-09 00:15:49 | __main__                       | INFO     |   Processing 9B: Other Information
+2025-12-09 00:15:49 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:49 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:49 | __main__                       | INFO     |   Processing 10: Directors, Executive Officers, and Corporate Governance
+2025-12-09 00:15:49 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:49 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:49 | __main__                       | INFO     |   Processing 11: Executive Compensation
+2025-12-09 00:15:49 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:49 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:49 | __main__                       | INFO     |   Processing 12: Security Ownership of Certain Beneficial Owners and Management
+2025-12-09 00:15:49 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:49 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:49 | __main__                       | INFO     |   Processing 13: Certain Relationships and Related Transactions, and Director Independence
+2025-12-09 00:15:49 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:49 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:49 | __main__                       | INFO     |   Processing 14: Principal Accounting Fees and Services
+2025-12-09 00:15:49 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:15:49 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:49 | __main__                       | INFO     |   Processing 15: Exhibits, Financial Statement Schedules
+2025-12-09 00:15:49 | src.data_processing.table_processor | INFO     | Found 5 tables in 15 section
+2025-12-09 00:15:50 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:50 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:50 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:51 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:51 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:15:51 | src.data_processing.table_processor | INFO     | Processed 5 tables in 15 section
+2025-12-09 00:15:51 | __main__                       | INFO     |     Found 5 tables
+2025-12-09 00:15:51 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:15:51 | src.data_storage.table_store   | INFO     | Saved 49 tables to C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\tables\tables_20251209_001551.json
+2025-12-09 00:15:51 | __main__                       | INFO     | 
+Saved 49 tables
+2025-12-09 00:15:51 | __main__                       | INFO     | 
+Total SEC chunks: 72
+2025-12-09 00:15:51 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:15:51 | __main__                       | INFO     | FETCHING WIKIPEDIA DATA: AAPL
+2025-12-09 00:15:51 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:15:51 | src.data_ingestion.wikipedia_fetcher | INFO     | Fetching Wikipedia page: Apple Inc.
+2025-12-09 00:15:51 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Apple Inc.&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-12-09 00:15:51 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Apple Inc.&explaintext=1&exsectionformat=wiki
+2025-12-09 00:15:51 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=categories&titles=Apple Inc.&cllimit=500
+2025-12-09 00:15:51 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500
+2025-12-09 00:15:51 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|Disney_Movies_Anywhere
+2025-12-09 00:15:52 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|List_of_the_largest_software_companies
+2025-12-09 00:15:52 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|State_Street_Corporation
+2025-12-09 00:15:52 | src.data_ingestion.wikipedia_fetcher | INFO     | Fetched Wikipedia: Apple Inc. (ID: 856, size: 86376 chars)
+2025-12-09 00:15:52 | __main__                       | INFO     | Fetched: Apple Inc.
+2025-12-09 00:15:52 | __main__                       | INFO     | Content: 86376 chars
+2025-12-09 00:15:52 | __main__                       | INFO     | Created 31 Wikipedia chunks
+2025-12-09 00:15:52 | __main__                       | WARNING  | News fetching disabled (no NEWSAPI_KEY)
+2025-12-09 00:15:52 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:15:52 | __main__                       | INFO     | SUMMARY
+2025-12-09 00:15:52 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:15:52 | __main__                       | INFO     | SEC chunks:       72
+2025-12-09 00:15:52 | __main__                       | INFO     | SEC tables:       49
+2025-12-09 00:15:52 | __main__                       | INFO     | Wikipedia chunks: 31
+2025-12-09 00:15:52 | __main__                       | INFO     | News chunks:      0
+2025-12-09 00:15:52 | __main__                       | INFO     | Total chunks:     103
+2025-12-09 00:15:52 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:15:52 | __main__                       | INFO     | SAVED: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\AAPL_2024_all_data_20251209_001552.json
+2025-12-09 00:15:52 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:15:52 | __main__                       | INFO     | 
+Done! Data saved to: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\AAPL_2024_all_data_20251209_001552.json
+2025-12-09 00:21:55 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:21:56 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:21:56 | __main__                       | INFO     | SINGLE COMPANY DATA FETCHER
+2025-12-09 00:21:56 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:21:56 | __main__                       | INFO     | Ticker: AAPL
+2025-12-09 00:21:56 | __main__                       | INFO     | Year: 2024
+2025-12-09 00:21:56 | __main__                       | INFO     | Output: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data
+2025-12-09 00:21:56 | __main__                       | INFO     | Loaded environment from: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\.env
+2025-12-09 00:21:56 | edgar.core                     | INFO     | Identity of the Edgar REST client set to [surajonlyforgames@gmail.com]
+2025-12-09 00:21:56 | src.data_ingestion.sec_fetcher | INFO     | SECFetcher initialized with edgartools (identity: surajonlyforgames@gmail.com)
+2025-12-09 00:21:56 | wikipediaapi                   | INFO     | Wikipedia: language=en, user_agent: DataPipeline/1.0 (Educational Project) (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-12-09 00:21:56 | src.data_ingestion.wikipedia_fetcher | INFO     | WikipediaFetcher initialized (Wikipedia-API library, English only)
+2025-12-09 00:21:56 | src.data_ingestion.news_fetcher | INFO     | NewsFetcher initialized (mode=auto)
+2025-12-09 00:21:56 | __main__                       | INFO     | NewsFetcher initialized (NewsAPI + GDELT)
+2025-12-09 00:21:56 | src.data_processing.chunker    | INFO     | TextChunker initialized: 800 tokens (exact), overlap: 100 tokens (tiktoken)
+2025-12-09 00:21:57 | src.utils.table_summarizer     | INFO     | Initialized GroqTableSummarizer with model: llama-3.1-8b-instant
+2025-12-09 00:21:57 | src.data_processing.table_processor | INFO     | Initialized TableProcessor (min_table_size=0)
+2025-12-09 00:21:57 | src.data_storage.table_store   | INFO     | TableStore initialized at: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\tables
+2025-12-09 00:21:57 | __main__                       | INFO     | Table processing enabled (Groq)
+2025-12-09 00:21:57 | __main__                       | INFO     | SingleCompanyFetcher initialized
+2025-12-09 00:21:57 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:21:57 | __main__                       | INFO     | FETCHING SEC DATA: AAPL 10-K 2024
+2025-12-09 00:21:57 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:21:57 | src.data_ingestion.sec_fetcher | INFO     | Fetching filings for CIK 0000320193: ['10-K'] from 2024-01-01
+2025-12-09 00:21:57 | httpxthrottlecache.filecache.transport | INFO     | cache_dir=C:\Users\suraj\.edgar\_tcache
+2025-12-09 00:21:57 | httpxthrottlecache.filecache.transport | INFO     | No cache policy for data.sec.gov:///submissions/CIK0000320193.json, not retrieving from cache
+2025-12-09 00:21:57 | httpxthrottlecache.ratelimiter | INFO     | Making HTTP Request <Request('GET', 'https://data.sec.gov/submissions/CIK0000320193.json')>
+2025-12-09 00:21:57 | httpx                          | INFO     | HTTP Request: GET https://data.sec.gov/submissions/CIK0000320193.json "HTTP/1.1 200 OK"
+2025-12-09 00:21:57 | src.data_ingestion.sec_fetcher | INFO     | Found company: Apple Inc.
+2025-12-09 00:21:57 | httpxthrottlecache.filecache.transport | INFO     | No cache policy for data.sec.gov:///submissions/CIK0000320193-submissions-001.json, not retrieving from cache
+2025-12-09 00:21:57 | httpxthrottlecache.ratelimiter | INFO     | Making HTTP Request <Request('GET', 'https://data.sec.gov/submissions/CIK0000320193-submissions-001.json')>
+2025-12-09 00:21:57 | httpx                          | INFO     | HTTP Request: GET https://data.sec.gov/submissions/CIK0000320193-submissions-001.json "HTTP/1.1 200 OK"
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     | Found 1 filings
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     | Processing filing 1/1: 10-K on 2024-11-01
+2025-12-09 00:21:58 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:21:58 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/000032019324000123/0000320193-24-000123.txt matched /Archives/edgar/data, using value True
+2025-12-09 00:21:58 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-000032019324000123-0000320193-24-000123.txt
+2025-12-09 00:21:58 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/0000320193-24-000123.txt "HTTP/1.1 200 OK"
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |   Got document object: TenK
+2025-12-09 00:21:58 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:21:58 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/0000320193-24-000123-index.html matched /Archives/edgar/data, using value True
+2025-12-09 00:21:58 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-0000320193-24-000123-index.html
+2025-12-09 00:21:58 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/0000320193-24-000123-index.html "HTTP/1.1 200 OK"
+2025-12-09 00:21:58 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:21:58 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm matched /Archives/edgar/data, using value True
+2025-12-09 00:21:58 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-000032019324000123-aapl-20240928.htm
+2025-12-09 00:21:58 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm "HTTP/1.1 200 OK"
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |   Found 23 items: ['Item 1', 'Item 1A', 'Item 1B', 'Item 1C', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7', 'Item 7A', 'Item 8', 'Item 9', 'Item 9A', 'Item 9B', 'Item 9C', 'Item 10', 'Item 11', 'Item 12', 'Item 13', 'Item 14', 'Item 15', 'Item 16']
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1: Business (15710 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1A: Risk Factors (68784 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1C: Cybersecurity (2738 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 2: Properties (486 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 3: Legal Proceedings (4341 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 5: Market for Registrant's Common Equity (4894 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 7: Management's Discussion and Analysis (MD&A) (18324 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 7A: Quantitative and Qualitative Disclosures About Market Risk (3267 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 8: Financial Statements (102747 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9: Controls and Procedures (101 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9A: Controls and Procedures (4500 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9B: Other Information (1344 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 10: Directors, Executive Officers, and Corporate Governance (1033 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 11: Executive Compensation (159 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 12: Security Ownership of Certain Beneficial Owners and Management (231 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 13: Certain Relationships and Related Transactions, and Director Independence (210 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 14: Principal Accounting Fees and Services (211 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 15: Exhibits, Financial Statement Schedules (30533 chars)
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     |   ✓ Extracted 18 sections, 259,613 total characters
+2025-12-09 00:21:58 | src.data_ingestion.sec_fetcher | INFO     | Successfully fetched 1/1 filings
+2025-12-09 00:21:58 | __main__                       | INFO     | Found 10-K: 2024-11-01, Accession: 0000320193-24-000123
+2025-12-09 00:21:58 | __main__                       | INFO     | Processing 18 sections...
+2025-12-09 00:21:58 | __main__                       | INFO     |   Processing 1: Business
+2025-12-09 00:21:58 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:21:58 | __main__                       | INFO     |     Created 6 chunks
+2025-12-09 00:21:58 | __main__                       | INFO     |   Processing 1A: Risk Factors
+2025-12-09 00:21:58 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:21:58 | __main__                       | INFO     |     Created 24 chunks
+2025-12-09 00:21:58 | __main__                       | INFO     |   Processing 1C: Cybersecurity
+2025-12-09 00:21:58 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:21:58 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:21:58 | __main__                       | INFO     |   Processing 2: Properties
+2025-12-09 00:21:58 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:21:58 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:21:58 | __main__                       | INFO     |   Processing 3: Legal Proceedings
+2025-12-09 00:21:58 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:21:58 | __main__                       | INFO     |     Created 2 chunks
+2025-12-09 00:21:58 | __main__                       | INFO     |   Processing 5: Market for Registrant's Common Equity
+2025-12-09 00:21:58 | src.data_processing.table_processor | INFO     | Found 2 tables in 5 section
+2025-12-09 00:21:59 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:21:59 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:21:59 | src.data_processing.table_processor | INFO     | Processed 2 tables in 5 section
+2025-12-09 00:21:59 | __main__                       | INFO     |     Found 2 tables
+2025-12-09 00:21:59 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:21:59 | __main__                       | INFO     |   Processing 7: Management's Discussion and Analysis (MD&A)
+2025-12-09 00:21:59 | src.data_processing.table_processor | INFO     | Found 6 tables in 7 section
+2025-12-09 00:22:00 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:00 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:00 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:01 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:01 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:01 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:01 | src.data_processing.table_processor | INFO     | Processed 6 tables in 7 section
+2025-12-09 00:22:01 | __main__                       | INFO     |     Found 6 tables
+2025-12-09 00:22:01 | __main__                       | INFO     |     Created 7 chunks
+2025-12-09 00:22:01 | __main__                       | INFO     |   Processing 7A: Quantitative and Qualitative Disclosures About Market Risk
+2025-12-09 00:22:01 | src.data_processing.table_processor | INFO     | Found 1 tables in 7A section
+2025-12-09 00:22:02 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:02 | src.data_processing.table_processor | INFO     | Processed 1 tables in 7A section
+2025-12-09 00:22:02 | __main__                       | INFO     |     Found 1 tables
+2025-12-09 00:22:02 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:22:02 | __main__                       | INFO     |   Processing 8: Financial Statements
+2025-12-09 00:22:02 | src.data_processing.table_processor | INFO     | Found 35 tables in 8 section
+2025-12-09 00:22:02 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:02 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:03 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:03 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:04 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:04 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:04 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:05 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:05 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:06 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:06 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:06 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:06 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:07 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:07 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:07 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:07 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:08 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:08 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:08 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:09 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:09 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:09 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:10 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:10 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:10 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:11 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:11 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:11 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:11 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:12 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:12 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:12 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:12 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:13 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:13 | src.data_processing.table_processor | INFO     | Processed 35 tables in 8 section
+2025-12-09 00:22:13 | __main__                       | INFO     |     Found 35 tables
+2025-12-09 00:22:13 | __main__                       | INFO     |     Created 19 chunks
+2025-12-09 00:22:13 | __main__                       | INFO     |   Processing 9: Controls and Procedures
+2025-12-09 00:22:13 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:22:13 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:22:13 | __main__                       | INFO     |   Processing 9A: Controls and Procedures
+2025-12-09 00:22:13 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:22:13 | __main__                       | INFO     |     Created 2 chunks
+2025-12-09 00:22:13 | __main__                       | INFO     |   Processing 9B: Other Information
+2025-12-09 00:22:13 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:22:13 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:22:13 | __main__                       | INFO     |   Processing 10: Directors, Executive Officers, and Corporate Governance
+2025-12-09 00:22:13 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:22:13 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:22:13 | __main__                       | INFO     |   Processing 11: Executive Compensation
+2025-12-09 00:22:13 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:22:13 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:22:13 | __main__                       | INFO     |   Processing 12: Security Ownership of Certain Beneficial Owners and Management
+2025-12-09 00:22:13 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:22:13 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:22:13 | __main__                       | INFO     |   Processing 13: Certain Relationships and Related Transactions, and Director Independence
+2025-12-09 00:22:13 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:22:13 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:22:13 | __main__                       | INFO     |   Processing 14: Principal Accounting Fees and Services
+2025-12-09 00:22:13 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:22:13 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:22:13 | __main__                       | INFO     |   Processing 15: Exhibits, Financial Statement Schedules
+2025-12-09 00:22:13 | src.data_processing.table_processor | INFO     | Found 5 tables in 15 section
+2025-12-09 00:22:13 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:13 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:14 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:14 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:14 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:22:14 | src.data_processing.table_processor | INFO     | Processed 5 tables in 15 section
+2025-12-09 00:22:14 | __main__                       | INFO     |     Found 5 tables
+2025-12-09 00:22:14 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:22:14 | src.data_storage.table_store   | INFO     | Saved 49 tables to C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\tables\tables_20251209_002214.json
+2025-12-09 00:22:14 | __main__                       | INFO     | 
+Saved 49 tables
+2025-12-09 00:22:14 | __main__                       | INFO     | 
+Total SEC chunks: 72
+2025-12-09 00:22:14 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:22:14 | __main__                       | INFO     | FETCHING WIKIPEDIA DATA: AAPL
+2025-12-09 00:22:14 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:22:14 | src.data_ingestion.wikipedia_fetcher | INFO     | Fetching Wikipedia page: Apple Inc.
+2025-12-09 00:22:14 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Apple Inc.&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-12-09 00:22:15 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Apple Inc.&explaintext=1&exsectionformat=wiki
+2025-12-09 00:22:15 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=categories&titles=Apple Inc.&cllimit=500
+2025-12-09 00:22:15 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500
+2025-12-09 00:22:15 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|Disney_Movies_Anywhere
+2025-12-09 00:22:15 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|List_of_the_largest_software_companies
+2025-12-09 00:22:15 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|State_Street_Corporation
+2025-12-09 00:22:16 | src.data_ingestion.wikipedia_fetcher | INFO     | Fetched Wikipedia: Apple Inc. (ID: 856, size: 86376 chars)
+2025-12-09 00:22:16 | __main__                       | INFO     | Fetched: Apple Inc.
+2025-12-09 00:22:16 | __main__                       | INFO     | Content: 86376 chars
+2025-12-09 00:22:16 | __main__                       | INFO     | Created 31 Wikipedia chunks
+2025-12-09 00:22:16 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:22:16 | __main__                       | INFO     | FETCHING NEWS DATA: AAPL (last 30 days)
+2025-12-09 00:22:16 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:22:16 | src.data_ingestion.news_fetcher | INFO     | Fetching news for AAPL (Apple Inc.) - last 30 days
+2025-12-09 00:22:21 | src.data_ingestion.news_fetcher | INFO     | Removed 3 duplicates
+2025-12-09 00:22:21 | src.data_ingestion.news_fetcher | INFO     | After filtering: 0 relevant articles
+2025-12-09 00:22:21 | src.data_ingestion.news_fetcher | INFO     | Extracting full content for 0 articles...
+2025-12-09 00:22:21 | src.data_ingestion.news_fetcher | INFO     | Successfully extracted 0 articles
+2025-12-09 00:22:21 | src.data_ingestion.news_fetcher | INFO     |   Full extractions: 0
+2025-12-09 00:22:21 | src.data_ingestion.news_fetcher | INFO     |   NewsAPI fallbacks: 0
+2025-12-09 00:22:21 | __main__                       | INFO     | Fetched 0 articles
+2025-12-09 00:22:21 | __main__                       | INFO     | Created 0 news chunks from 0 articles
+2025-12-09 00:22:21 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:22:21 | __main__                       | INFO     | SUMMARY
+2025-12-09 00:22:21 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:22:21 | __main__                       | INFO     | SEC chunks:       72
+2025-12-09 00:22:21 | __main__                       | INFO     | SEC tables:       49
+2025-12-09 00:22:21 | __main__                       | INFO     | Wikipedia chunks: 31
+2025-12-09 00:22:21 | __main__                       | INFO     | News chunks:      0
+2025-12-09 00:22:21 | __main__                       | INFO     | Total chunks:     103
+2025-12-09 00:22:21 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:22:21 | __main__                       | INFO     | SAVED: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\AAPL_2024_all_data_20251209_002221.json
+2025-12-09 00:22:21 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:22:21 | __main__                       | INFO     | 
+Done! Data saved to: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\AAPL_2024_all_data_20251209_002221.json
+2025-12-09 00:23:11 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:23:12 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:23:12 | __main__                       | INFO     | SINGLE COMPANY DATA FETCHER
+2025-12-09 00:23:12 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:23:12 | __main__                       | INFO     | Ticker: AAPL
+2025-12-09 00:23:12 | __main__                       | INFO     | Year: 2024
+2025-12-09 00:23:12 | __main__                       | INFO     | Output: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data
+2025-12-09 00:23:12 | __main__                       | INFO     | Loaded environment from: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\.env
+2025-12-09 00:23:12 | edgar.core                     | INFO     | Identity of the Edgar REST client set to [surajonlyforgames@gmail.com]
+2025-12-09 00:23:12 | src.data_ingestion.sec_fetcher | INFO     | SECFetcher initialized with edgartools (identity: surajonlyforgames@gmail.com)
+2025-12-09 00:23:12 | wikipediaapi                   | INFO     | Wikipedia: language=en, user_agent: DataPipeline/1.0 (Educational Project) (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-12-09 00:23:12 | src.data_ingestion.wikipedia_fetcher | INFO     | WikipediaFetcher initialized (Wikipedia-API library, English only)
+2025-12-09 00:23:12 | src.data_ingestion.news_fetcher | INFO     | NewsFetcher initialized (mode=auto)
+2025-12-09 00:23:12 | __main__                       | INFO     | NewsFetcher initialized (NewsAPI + GDELT)
+2025-12-09 00:23:12 | src.data_processing.chunker    | INFO     | TextChunker initialized: 800 tokens (exact), overlap: 100 tokens (tiktoken)
+2025-12-09 00:23:12 | src.utils.table_summarizer     | INFO     | Initialized GroqTableSummarizer with model: llama-3.1-8b-instant
+2025-12-09 00:23:12 | src.data_processing.table_processor | INFO     | Initialized TableProcessor (min_table_size=0)
+2025-12-09 00:23:12 | src.data_storage.table_store   | INFO     | TableStore initialized at: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\tables
+2025-12-09 00:23:12 | __main__                       | INFO     | Table processing enabled (Groq)
+2025-12-09 00:23:12 | __main__                       | INFO     | SingleCompanyFetcher initialized
+2025-12-09 00:23:12 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:23:12 | __main__                       | INFO     | FETCHING SEC DATA: AAPL 10-K 2024
+2025-12-09 00:23:12 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:23:12 | src.data_ingestion.sec_fetcher | INFO     | Fetching filings for CIK 0000320193: ['10-K'] from 2024-01-01
+2025-12-09 00:23:13 | httpxthrottlecache.filecache.transport | INFO     | cache_dir=C:\Users\suraj\.edgar\_tcache
+2025-12-09 00:23:13 | httpxthrottlecache.filecache.transport | INFO     | No cache policy for data.sec.gov:///submissions/CIK0000320193.json, not retrieving from cache
+2025-12-09 00:23:13 | httpxthrottlecache.ratelimiter | INFO     | Making HTTP Request <Request('GET', 'https://data.sec.gov/submissions/CIK0000320193.json')>
+2025-12-09 00:23:13 | httpx                          | INFO     | HTTP Request: GET https://data.sec.gov/submissions/CIK0000320193.json "HTTP/1.1 200 OK"
+2025-12-09 00:23:13 | src.data_ingestion.sec_fetcher | INFO     | Found company: Apple Inc.
+2025-12-09 00:23:13 | httpxthrottlecache.filecache.transport | INFO     | No cache policy for data.sec.gov:///submissions/CIK0000320193-submissions-001.json, not retrieving from cache
+2025-12-09 00:23:13 | httpxthrottlecache.ratelimiter | INFO     | Making HTTP Request <Request('GET', 'https://data.sec.gov/submissions/CIK0000320193-submissions-001.json')>
+2025-12-09 00:23:13 | httpx                          | INFO     | HTTP Request: GET https://data.sec.gov/submissions/CIK0000320193-submissions-001.json "HTTP/1.1 200 OK"
+2025-12-09 00:23:13 | src.data_ingestion.sec_fetcher | INFO     | Found 1 filings
+2025-12-09 00:23:13 | src.data_ingestion.sec_fetcher | INFO     | Processing filing 1/1: 10-K on 2024-11-01
+2025-12-09 00:23:13 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:23:13 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/000032019324000123/0000320193-24-000123.txt matched /Archives/edgar/data, using value True
+2025-12-09 00:23:13 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-000032019324000123-0000320193-24-000123.txt
+2025-12-09 00:23:13 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/0000320193-24-000123.txt "HTTP/1.1 200 OK"
+2025-12-09 00:23:13 | src.data_ingestion.sec_fetcher | INFO     |   Got document object: TenK
+2025-12-09 00:23:13 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:23:13 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/0000320193-24-000123-index.html matched /Archives/edgar/data, using value True
+2025-12-09 00:23:13 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-0000320193-24-000123-index.html
+2025-12-09 00:23:13 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/0000320193-24-000123-index.html "HTTP/1.1 200 OK"
+2025-12-09 00:23:13 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:23:13 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm matched /Archives/edgar/data, using value True
+2025-12-09 00:23:13 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-000032019324000123-aapl-20240928.htm
+2025-12-09 00:23:13 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm "HTTP/1.1 200 OK"
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |   Found 23 items: ['Item 1', 'Item 1A', 'Item 1B', 'Item 1C', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7', 'Item 7A', 'Item 8', 'Item 9', 'Item 9A', 'Item 9B', 'Item 9C', 'Item 10', 'Item 11', 'Item 12', 'Item 13', 'Item 14', 'Item 15', 'Item 16']
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1: Business (15710 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1A: Risk Factors (68784 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1C: Cybersecurity (2738 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 2: Properties (486 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 3: Legal Proceedings (4341 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 5: Market for Registrant's Common Equity (4894 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 7: Management's Discussion and Analysis (MD&A) (18324 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 7A: Quantitative and Qualitative Disclosures About Market Risk (3267 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 8: Financial Statements (102747 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9: Controls and Procedures (101 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9A: Controls and Procedures (4500 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9B: Other Information (1344 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 10: Directors, Executive Officers, and Corporate Governance (1033 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 11: Executive Compensation (159 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 12: Security Ownership of Certain Beneficial Owners and Management (231 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 13: Certain Relationships and Related Transactions, and Director Independence (210 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 14: Principal Accounting Fees and Services (211 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 15: Exhibits, Financial Statement Schedules (30533 chars)
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     |   ✓ Extracted 18 sections, 259,613 total characters
+2025-12-09 00:23:14 | src.data_ingestion.sec_fetcher | INFO     | Successfully fetched 1/1 filings
+2025-12-09 00:23:14 | __main__                       | INFO     | Found 10-K: 2024-11-01, Accession: 0000320193-24-000123
+2025-12-09 00:23:14 | __main__                       | INFO     | Processing 18 sections...
+2025-12-09 00:23:14 | __main__                       | INFO     |   Processing 1: Business
+2025-12-09 00:23:14 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:14 | __main__                       | INFO     |     Created 6 chunks
+2025-12-09 00:23:14 | __main__                       | INFO     |   Processing 1A: Risk Factors
+2025-12-09 00:23:14 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:14 | __main__                       | INFO     |     Created 24 chunks
+2025-12-09 00:23:14 | __main__                       | INFO     |   Processing 1C: Cybersecurity
+2025-12-09 00:23:14 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:14 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:14 | __main__                       | INFO     |   Processing 2: Properties
+2025-12-09 00:23:14 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:14 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:14 | __main__                       | INFO     |   Processing 3: Legal Proceedings
+2025-12-09 00:23:14 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:14 | __main__                       | INFO     |     Created 2 chunks
+2025-12-09 00:23:14 | __main__                       | INFO     |   Processing 5: Market for Registrant's Common Equity
+2025-12-09 00:23:14 | src.data_processing.table_processor | INFO     | Found 2 tables in 5 section
+2025-12-09 00:23:14 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:15 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:15 | src.data_processing.table_processor | INFO     | Processed 2 tables in 5 section
+2025-12-09 00:23:15 | __main__                       | INFO     |     Found 2 tables
+2025-12-09 00:23:15 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:15 | __main__                       | INFO     |   Processing 7: Management's Discussion and Analysis (MD&A)
+2025-12-09 00:23:15 | src.data_processing.table_processor | INFO     | Found 6 tables in 7 section
+2025-12-09 00:23:15 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:15 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:15 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:16 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:16 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:16 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:16 | src.data_processing.table_processor | INFO     | Processed 6 tables in 7 section
+2025-12-09 00:23:16 | __main__                       | INFO     |     Found 6 tables
+2025-12-09 00:23:16 | __main__                       | INFO     |     Created 7 chunks
+2025-12-09 00:23:16 | __main__                       | INFO     |   Processing 7A: Quantitative and Qualitative Disclosures About Market Risk
+2025-12-09 00:23:16 | src.data_processing.table_processor | INFO     | Found 1 tables in 7A section
+2025-12-09 00:23:17 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:17 | src.data_processing.table_processor | INFO     | Processed 1 tables in 7A section
+2025-12-09 00:23:17 | __main__                       | INFO     |     Found 1 tables
+2025-12-09 00:23:17 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:17 | __main__                       | INFO     |   Processing 8: Financial Statements
+2025-12-09 00:23:17 | src.data_processing.table_processor | INFO     | Found 35 tables in 8 section
+2025-12-09 00:23:17 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:17 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:18 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:18 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:18 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:19 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:19 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:20 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:20 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:20 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:20 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:21 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:21 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:21 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:21 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:22 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:22 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:22 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:23 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:23 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:23 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:24 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:24 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:24 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:24 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:25 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:25 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:25 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:26 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:26 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:26 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:27 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:27 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:27 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:28 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:28 | src.data_processing.table_processor | INFO     | Processed 35 tables in 8 section
+2025-12-09 00:23:28 | __main__                       | INFO     |     Found 35 tables
+2025-12-09 00:23:28 | __main__                       | INFO     |     Created 19 chunks
+2025-12-09 00:23:28 | __main__                       | INFO     |   Processing 9: Controls and Procedures
+2025-12-09 00:23:28 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:28 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:28 | __main__                       | INFO     |   Processing 9A: Controls and Procedures
+2025-12-09 00:23:28 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:28 | __main__                       | INFO     |     Created 2 chunks
+2025-12-09 00:23:28 | __main__                       | INFO     |   Processing 9B: Other Information
+2025-12-09 00:23:28 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:28 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:28 | __main__                       | INFO     |   Processing 10: Directors, Executive Officers, and Corporate Governance
+2025-12-09 00:23:28 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:28 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:28 | __main__                       | INFO     |   Processing 11: Executive Compensation
+2025-12-09 00:23:28 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:28 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:28 | __main__                       | INFO     |   Processing 12: Security Ownership of Certain Beneficial Owners and Management
+2025-12-09 00:23:28 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:28 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:28 | __main__                       | INFO     |   Processing 13: Certain Relationships and Related Transactions, and Director Independence
+2025-12-09 00:23:28 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:28 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:28 | __main__                       | INFO     |   Processing 14: Principal Accounting Fees and Services
+2025-12-09 00:23:28 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:23:28 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:28 | __main__                       | INFO     |   Processing 15: Exhibits, Financial Statement Schedules
+2025-12-09 00:23:28 | src.data_processing.table_processor | INFO     | Found 5 tables in 15 section
+2025-12-09 00:23:28 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:29 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:29 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:29 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:30 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:23:30 | src.data_processing.table_processor | INFO     | Processed 5 tables in 15 section
+2025-12-09 00:23:30 | __main__                       | INFO     |     Found 5 tables
+2025-12-09 00:23:30 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:23:30 | src.data_storage.table_store   | INFO     | Saved 49 tables to C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\tables\tables_20251209_002330.json
+2025-12-09 00:23:30 | __main__                       | INFO     | 
+Saved 49 tables
+2025-12-09 00:23:30 | __main__                       | INFO     | 
+Total SEC chunks: 72
+2025-12-09 00:23:30 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:23:30 | __main__                       | INFO     | FETCHING WIKIPEDIA DATA: AAPL
+2025-12-09 00:23:30 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:23:30 | src.data_ingestion.wikipedia_fetcher | INFO     | Fetching Wikipedia page: Apple Inc.
+2025-12-09 00:23:30 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Apple Inc.&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-12-09 00:23:30 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Apple Inc.&explaintext=1&exsectionformat=wiki
+2025-12-09 00:23:30 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=categories&titles=Apple Inc.&cllimit=500
+2025-12-09 00:23:30 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500
+2025-12-09 00:23:30 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|Disney_Movies_Anywhere
+2025-12-09 00:23:30 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|List_of_the_largest_software_companies
+2025-12-09 00:23:30 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|State_Street_Corporation
+2025-12-09 00:23:31 | src.data_ingestion.wikipedia_fetcher | INFO     | Fetched Wikipedia: Apple Inc. (ID: 856, size: 86376 chars)
+2025-12-09 00:23:31 | __main__                       | INFO     | Fetched: Apple Inc.
+2025-12-09 00:23:31 | __main__                       | INFO     | Content: 86376 chars
+2025-12-09 00:23:31 | __main__                       | INFO     | Created 31 Wikipedia chunks
+2025-12-09 00:23:31 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:23:31 | __main__                       | INFO     | FETCHING NEWS DATA: AAPL (last 30 days)
+2025-12-09 00:23:31 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:23:31 | src.data_ingestion.news_fetcher | INFO     | Fetching news for AAPL (Apple Inc.) - last 30 days
+2025-12-09 00:23:44 | src.data_ingestion.news_fetcher | INFO     | Removed 3 duplicates
+2025-12-09 00:23:44 | src.data_ingestion.news_fetcher | INFO     | After filtering: 0 relevant articles
+2025-12-09 00:23:44 | src.data_ingestion.news_fetcher | INFO     | Extracting full content for 0 articles...
+2025-12-09 00:23:44 | src.data_ingestion.news_fetcher | INFO     | Successfully extracted 0 articles
+2025-12-09 00:23:44 | src.data_ingestion.news_fetcher | INFO     |   Full extractions: 0
+2025-12-09 00:23:44 | src.data_ingestion.news_fetcher | INFO     |   NewsAPI fallbacks: 0
+2025-12-09 00:23:44 | __main__                       | INFO     | Fetched 0 articles
+2025-12-09 00:23:44 | __main__                       | INFO     | Created 0 news chunks from 0 articles
+2025-12-09 00:23:44 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:23:44 | __main__                       | INFO     | SUMMARY
+2025-12-09 00:23:44 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:23:44 | __main__                       | INFO     | SEC chunks:       72
+2025-12-09 00:23:44 | __main__                       | INFO     | SEC tables:       49
+2025-12-09 00:23:44 | __main__                       | INFO     | Wikipedia chunks: 31
+2025-12-09 00:23:44 | __main__                       | INFO     | News chunks:      0
+2025-12-09 00:23:44 | __main__                       | INFO     | Total chunks:     103
+2025-12-09 00:23:44 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:23:44 | __main__                       | INFO     | SAVED: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\AAPL_2024_all_data_20251209_002344.json
+2025-12-09 00:23:44 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:23:44 | __main__                       | INFO     | 
+Done! Data saved to: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\AAPL_2024_all_data_20251209_002344.json
+2025-12-09 00:40:47 | root                           | INFO     | Logging initialized: INFO level, log_dir: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\logs
+2025-12-09 00:40:48 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:40:48 | __main__                       | INFO     | SINGLE COMPANY DATA FETCHER
+2025-12-09 00:40:48 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:40:48 | __main__                       | INFO     | Ticker: AAPL
+2025-12-09 00:40:48 | __main__                       | INFO     | Year: 2024
+2025-12-09 00:40:48 | __main__                       | INFO     | Output: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data
+2025-12-09 00:40:48 | __main__                       | INFO     | Loaded environment from: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\.env
+2025-12-09 00:40:48 | edgar.core                     | INFO     | Identity of the Edgar REST client set to [surajonlyforgames@gmail.com]
+2025-12-09 00:40:48 | src.data_ingestion.sec_fetcher | INFO     | SECFetcher initialized with edgartools (identity: surajonlyforgames@gmail.com)
+2025-12-09 00:40:48 | wikipediaapi                   | INFO     | Wikipedia: language=en, user_agent: DataPipeline/1.0 (Educational Project) (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-12-09 00:40:48 | src.data_ingestion.wikipedia_fetcher | INFO     | WikipediaFetcher initialized (Wikipedia-API library, English only)
+2025-12-09 00:40:48 | src.data_ingestion.news_fetcher | INFO     | NewsFetcher initialized (mode=auto)
+2025-12-09 00:40:48 | __main__                       | INFO     | NewsFetcher initialized (NewsAPI + GDELT)
+2025-12-09 00:40:49 | src.data_processing.chunker    | INFO     | TextChunker initialized: 800 tokens (exact), overlap: 100 tokens (tiktoken)
+2025-12-09 00:40:49 | src.utils.table_summarizer     | INFO     | Initialized GroqTableSummarizer with model: llama-3.1-8b-instant
+2025-12-09 00:40:49 | src.data_processing.table_processor | INFO     | Initialized TableProcessor (min_table_size=0)
+2025-12-09 00:40:49 | src.data_storage.table_store   | INFO     | TableStore initialized at: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\tables
+2025-12-09 00:40:49 | __main__                       | INFO     | Table processing enabled (Groq)
+2025-12-09 00:40:49 | __main__                       | INFO     | SingleCompanyFetcher initialized
+2025-12-09 00:40:49 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:40:49 | __main__                       | INFO     | FETCHING SEC DATA: AAPL 10-K 2024
+2025-12-09 00:40:49 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:40:49 | src.data_ingestion.sec_fetcher | INFO     | Fetching filings for CIK 0000320193: ['10-K'] from 2024-01-01
+2025-12-09 00:40:49 | httpxthrottlecache.filecache.transport | INFO     | cache_dir=C:\Users\suraj\.edgar\_tcache
+2025-12-09 00:40:49 | httpxthrottlecache.filecache.transport | INFO     | No cache policy for data.sec.gov:///submissions/CIK0000320193.json, not retrieving from cache
+2025-12-09 00:40:49 | httpxthrottlecache.ratelimiter | INFO     | Making HTTP Request <Request('GET', 'https://data.sec.gov/submissions/CIK0000320193.json')>
+2025-12-09 00:40:49 | httpx                          | INFO     | HTTP Request: GET https://data.sec.gov/submissions/CIK0000320193.json "HTTP/1.1 200 OK"
+2025-12-09 00:40:49 | src.data_ingestion.sec_fetcher | INFO     | Found company: Apple Inc.
+2025-12-09 00:40:49 | httpxthrottlecache.filecache.transport | INFO     | No cache policy for data.sec.gov:///submissions/CIK0000320193-submissions-001.json, not retrieving from cache
+2025-12-09 00:40:49 | httpxthrottlecache.ratelimiter | INFO     | Making HTTP Request <Request('GET', 'https://data.sec.gov/submissions/CIK0000320193-submissions-001.json')>
+2025-12-09 00:40:49 | httpx                          | INFO     | HTTP Request: GET https://data.sec.gov/submissions/CIK0000320193-submissions-001.json "HTTP/1.1 200 OK"
+2025-12-09 00:40:49 | src.data_ingestion.sec_fetcher | INFO     | Found 1 filings
+2025-12-09 00:40:49 | src.data_ingestion.sec_fetcher | INFO     | Processing filing 1/1: 10-K on 2024-11-01
+2025-12-09 00:40:49 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:40:49 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/000032019324000123/0000320193-24-000123.txt matched /Archives/edgar/data, using value True
+2025-12-09 00:40:49 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-000032019324000123-0000320193-24-000123.txt
+2025-12-09 00:40:49 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/0000320193-24-000123.txt "HTTP/1.1 200 OK"
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |   Got document object: TenK
+2025-12-09 00:40:50 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:40:50 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/0000320193-24-000123-index.html matched /Archives/edgar/data, using value True
+2025-12-09 00:40:50 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-0000320193-24-000123-index.html
+2025-12-09 00:40:50 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/0000320193-24-000123-index.html "HTTP/1.1 200 OK"
+2025-12-09 00:40:50 | httpxthrottlecache.controller  | INFO     | matched .*www\.sec\.gov, using value www.sec.gov: {'/submissions.*': 30, '/include/ticker\\.txt.*': 30, '/files/company_tickers\\.json.*': 30, '.*index/.*': 1800, '/Archives/edgar/data': True}
+2025-12-09 00:40:50 | httpxthrottlecache.controller  | INFO     | /Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm matched /Archives/edgar/data, using value True
+2025-12-09 00:40:50 | httpxthrottlecache.filecache.transport | INFO     | Cache policy allows unlimited cache, returning C:\Users\suraj\.edgar\_tcache\www.sec.gov\Archives-edgar-data-320193-000032019324000123-aapl-20240928.htm
+2025-12-09 00:40:50 | httpx                          | INFO     | HTTP Request: GET https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm "HTTP/1.1 200 OK"
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |   Found 23 items: ['Item 1', 'Item 1A', 'Item 1B', 'Item 1C', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7', 'Item 7A', 'Item 8', 'Item 9', 'Item 9A', 'Item 9B', 'Item 9C', 'Item 10', 'Item 11', 'Item 12', 'Item 13', 'Item 14', 'Item 15', 'Item 16']
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1: Business (15710 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1A: Risk Factors (68784 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 1C: Cybersecurity (2738 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 2: Properties (486 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 3: Legal Proceedings (4341 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 5: Market for Registrant's Common Equity (4894 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 7: Management's Discussion and Analysis (MD&A) (18324 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 7A: Quantitative and Qualitative Disclosures About Market Risk (3267 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 8: Financial Statements (102747 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9: Controls and Procedures (101 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9A: Controls and Procedures (4500 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 9B: Other Information (1344 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 10: Directors, Executive Officers, and Corporate Governance (1033 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 11: Executive Compensation (159 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 12: Security Ownership of Certain Beneficial Owners and Management (231 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 13: Certain Relationships and Related Transactions, and Director Independence (210 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 14: Principal Accounting Fees and Services (211 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |     ✓ Item 15: Exhibits, Financial Statement Schedules (30533 chars)
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     |   ✓ Extracted 18 sections, 259,613 total characters
+2025-12-09 00:40:50 | src.data_ingestion.sec_fetcher | INFO     | Successfully fetched 1/1 filings
+2025-12-09 00:40:50 | __main__                       | INFO     | Found 10-K: 2024-11-01, Accession: 0000320193-24-000123
+2025-12-09 00:40:50 | __main__                       | INFO     | Processing 18 sections...
+2025-12-09 00:40:50 | __main__                       | INFO     |   Processing 1: Business
+2025-12-09 00:40:50 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:40:50 | __main__                       | INFO     |     Created 6 chunks
+2025-12-09 00:40:50 | __main__                       | INFO     |   Processing 1A: Risk Factors
+2025-12-09 00:40:50 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:40:50 | __main__                       | INFO     |     Created 24 chunks
+2025-12-09 00:40:50 | __main__                       | INFO     |   Processing 1C: Cybersecurity
+2025-12-09 00:40:50 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:40:50 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:40:50 | __main__                       | INFO     |   Processing 2: Properties
+2025-12-09 00:40:50 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:40:50 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:40:50 | __main__                       | INFO     |   Processing 3: Legal Proceedings
+2025-12-09 00:40:50 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:40:50 | __main__                       | INFO     |     Created 2 chunks
+2025-12-09 00:40:50 | __main__                       | INFO     |   Processing 5: Market for Registrant's Common Equity
+2025-12-09 00:40:50 | src.data_processing.table_processor | INFO     | Found 2 tables in 5 section
+2025-12-09 00:40:51 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:51 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:51 | src.data_processing.table_processor | INFO     | Processed 2 tables in 5 section
+2025-12-09 00:40:51 | __main__                       | INFO     |     Found 2 tables
+2025-12-09 00:40:51 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:40:51 | __main__                       | INFO     |   Processing 7: Management's Discussion and Analysis (MD&A)
+2025-12-09 00:40:51 | src.data_processing.table_processor | INFO     | Found 6 tables in 7 section
+2025-12-09 00:40:51 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:52 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:52 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:52 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:53 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:53 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:53 | src.data_processing.table_processor | INFO     | Processed 6 tables in 7 section
+2025-12-09 00:40:53 | __main__                       | INFO     |     Found 6 tables
+2025-12-09 00:40:53 | __main__                       | INFO     |     Created 7 chunks
+2025-12-09 00:40:53 | __main__                       | INFO     |   Processing 7A: Quantitative and Qualitative Disclosures About Market Risk
+2025-12-09 00:40:53 | src.data_processing.table_processor | INFO     | Found 1 tables in 7A section
+2025-12-09 00:40:53 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:53 | src.data_processing.table_processor | INFO     | Processed 1 tables in 7A section
+2025-12-09 00:40:53 | __main__                       | INFO     |     Found 1 tables
+2025-12-09 00:40:53 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:40:53 | __main__                       | INFO     |   Processing 8: Financial Statements
+2025-12-09 00:40:53 | src.data_processing.table_processor | INFO     | Found 35 tables in 8 section
+2025-12-09 00:40:53 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:54 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:54 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:54 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:55 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:55 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:55 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:56 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:56 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:57 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:57 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:57 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:58 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:58 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:58 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:58 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:59 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:59 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:40:59 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:00 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:00 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:00 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:00 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:01 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:01 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:01 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:02 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:02 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:02 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:03 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:03 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:03 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:03 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:04 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:04 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:04 | src.data_processing.table_processor | INFO     | Processed 35 tables in 8 section
+2025-12-09 00:41:04 | __main__                       | INFO     |     Found 35 tables
+2025-12-09 00:41:04 | __main__                       | INFO     |     Created 19 chunks
+2025-12-09 00:41:04 | __main__                       | INFO     |   Processing 9: Controls and Procedures
+2025-12-09 00:41:04 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:41:04 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:41:04 | __main__                       | INFO     |   Processing 9A: Controls and Procedures
+2025-12-09 00:41:04 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:41:04 | __main__                       | INFO     |     Created 2 chunks
+2025-12-09 00:41:04 | __main__                       | INFO     |   Processing 9B: Other Information
+2025-12-09 00:41:04 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:41:04 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:41:04 | __main__                       | INFO     |   Processing 10: Directors, Executive Officers, and Corporate Governance
+2025-12-09 00:41:04 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:41:04 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:41:04 | __main__                       | INFO     |   Processing 11: Executive Compensation
+2025-12-09 00:41:04 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:41:04 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:41:04 | __main__                       | INFO     |   Processing 12: Security Ownership of Certain Beneficial Owners and Management
+2025-12-09 00:41:04 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:41:04 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:41:04 | __main__                       | INFO     |   Processing 13: Certain Relationships and Related Transactions, and Director Independence
+2025-12-09 00:41:04 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:41:04 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:41:04 | __main__                       | INFO     |   Processing 14: Principal Accounting Fees and Services
+2025-12-09 00:41:04 | __main__                       | INFO     |     Found 0 tables
+2025-12-09 00:41:04 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:41:04 | __main__                       | INFO     |   Processing 15: Exhibits, Financial Statement Schedules
+2025-12-09 00:41:04 | src.data_processing.table_processor | INFO     | Found 5 tables in 15 section
+2025-12-09 00:41:04 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:05 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:05 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:05 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:06 | httpx                          | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 00:41:06 | src.data_processing.table_processor | INFO     | Processed 5 tables in 15 section
+2025-12-09 00:41:06 | __main__                       | INFO     |     Found 5 tables
+2025-12-09 00:41:06 | __main__                       | INFO     |     Created 1 chunks
+2025-12-09 00:41:06 | src.data_storage.table_store   | INFO     | Saved 49 tables to C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\tables\tables_20251209_004106.json
+2025-12-09 00:41:06 | __main__                       | INFO     | 
+Saved 49 tables
+2025-12-09 00:41:06 | __main__                       | INFO     | 
+Total SEC chunks: 72
+2025-12-09 00:41:06 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:41:06 | __main__                       | INFO     | FETCHING WIKIPEDIA DATA: AAPL
+2025-12-09 00:41:06 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:41:06 | src.data_ingestion.wikipedia_fetcher | INFO     | Fetching Wikipedia page: Apple Inc.
+2025-12-09 00:41:06 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Apple Inc.&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-12-09 00:41:06 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Apple Inc.&explaintext=1&exsectionformat=wiki
+2025-12-09 00:41:06 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=categories&titles=Apple Inc.&cllimit=500
+2025-12-09 00:41:06 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500
+2025-12-09 00:41:06 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|Disney_Movies_Anywhere
+2025-12-09 00:41:07 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|List_of_the_largest_software_companies
+2025-12-09 00:41:07 | wikipediaapi                   | INFO     | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=links&titles=Apple Inc.&pllimit=500&plcontinue=856|0|State_Street_Corporation
+2025-12-09 00:41:07 | src.data_ingestion.wikipedia_fetcher | INFO     | Fetched Wikipedia: Apple Inc. (ID: 856, size: 86376 chars)
+2025-12-09 00:41:07 | __main__                       | INFO     | Fetched: Apple Inc.
+2025-12-09 00:41:07 | __main__                       | INFO     | Content: 86376 chars
+2025-12-09 00:41:07 | __main__                       | INFO     | Created 31 Wikipedia chunks
+2025-12-09 00:41:07 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:41:07 | __main__                       | INFO     | FETCHING NEWS DATA: AAPL (last 30 days)
+2025-12-09 00:41:07 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:41:07 | src.data_ingestion.news_fetcher | INFO     | Fetching news for AAPL (Apple Inc.) - last 30 days
+2025-12-09 00:41:08 | src.data_ingestion.news_fetcher | INFO     | Removed 3 duplicates
+2025-12-09 00:41:08 | src.data_ingestion.news_fetcher | INFO     | After filtering: 50 relevant articles
+2025-12-09 00:41:08 | src.data_ingestion.news_fetcher | INFO     | Extracting full content for 50 articles...
+2025-12-09 00:41:19 | src.data_ingestion.news_fetcher | WARNING  | ✗ [14/50] Extraction failed: Article `download()` failed with ('Connection aborted.', RemoteDisconnected('Remote end closed conne
+2025-12-09 00:41:25 | src.data_ingestion.news_fetcher | WARNING  | ✗ [24/50] Extraction failed: Article `download()` failed with ('Connection aborted.', RemoteDisconnected('Remote end closed conne
+2025-12-09 00:41:34 | src.data_ingestion.news_fetcher | WARNING  | ✗ [35/50] Extraction failed: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.digit.in/news/gene
+2025-12-09 00:41:49 | src.data_ingestion.news_fetcher | INFO     | Successfully extracted 47 articles
+2025-12-09 00:41:49 | src.data_ingestion.news_fetcher | INFO     |   Full extractions: 47
+2025-12-09 00:41:49 | src.data_ingestion.news_fetcher | INFO     |   NewsAPI fallbacks: 0
+2025-12-09 00:41:49 | __main__                       | INFO     | Fetched 47 articles
+2025-12-09 00:41:49 | __main__                       | INFO     | Created 72 news chunks from 47 articles
+2025-12-09 00:41:49 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:41:49 | __main__                       | INFO     | SUMMARY
+2025-12-09 00:41:49 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:41:49 | __main__                       | INFO     | SEC chunks:       72
+2025-12-09 00:41:49 | __main__                       | INFO     | SEC tables:       49
+2025-12-09 00:41:49 | __main__                       | INFO     | Wikipedia chunks: 31
+2025-12-09 00:41:49 | __main__                       | INFO     | News chunks:      72
+2025-12-09 00:41:49 | __main__                       | INFO     | Total chunks:     175
+2025-12-09 00:41:49 | __main__                       | INFO     | 
+======================================================================
+2025-12-09 00:41:49 | __main__                       | INFO     | SAVED: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\AAPL_2024_all_data_20251209_004149.json
+2025-12-09 00:41:49 | __main__                       | INFO     | ======================================================================
+2025-12-09 00:41:49 | __main__                       | INFO     | 
+Done! Data saved to: C:\Users\suraj\Hariharan\Assignments\Term3\MLOps\MLOps-Project\Automated_Due_Dillegence_Market_Intelligence_Agent_v2\Data_Pipeline\data\AAPL_2024_all_data_20251209_004149.json
