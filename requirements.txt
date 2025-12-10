@@ -1,12 +1,6 @@
-# sec filings
-edgartools
-# sec filings
-edgartools
-
 pyyaml 
 tqdm
-# sec filings
-edgartools
+
 # sec filings
 edgartools
 
