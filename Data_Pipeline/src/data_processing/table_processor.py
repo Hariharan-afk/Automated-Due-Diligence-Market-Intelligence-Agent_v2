@@ -136,11 +136,15 @@ class TableProcessor:
                         logger.warning(f"Could not convert table {table_index} to JSON: {json_err}")
                         dataframe_json = None
                     
-                    # Generate summary
+                    # Generate summary with comprehensive metadata context
                     context = {
-                        'section_name': metadata.get('section_name', ''),
+                        'ticker': metadata.get('ticker', ''),
+                        'company': metadata.get('company', ''),
                         'filing_type': metadata.get('filing_type', ''),
-                        'company': metadata.get('company', '')
+                        'filing_year': metadata.get('filing_year', ''),
+                        'fiscal_quarter': metadata.get('fiscal_quarter'),
+                        'section': metadata.get('section', ''),
+                        'section_name': metadata.get('section_name', '')
                     }
                     
                     summary = self.summarizer.summarize_table(table_markdown, context)

@@ -24,8 +24,8 @@ class GroqTableSummarizer:
         self, 
         api_key: Optional[str] = None,
         model: str = "llama-3.1-8b-instant",
-        max_summary_length: int = 200,
-        rate_limit_rpm: int = 30
+        max_summary_length: int = 300,
+        rate_limit_rpm: int = 300
     ):
         """
         Initialize Groq summarizer
@@ -109,7 +109,7 @@ class GroqTableSummarizer:
                             "content": prompt
                         }
                     ],
-                    max_tokens=150,
+                    max_tokens=200,  # Increased for longer summaries with context
                     temperature=0.3,  # Low temperature for consistent summaries
                 )
                 
@@ -167,31 +167,51 @@ class GroqTableSummarizer:
         table_markdown: str, 
         context: Optional[Dict] = None
     ) -> str:
-        """Build the summarization prompt with context"""
+        """Build the summarization prompt with comprehensive context"""
         context = context or {}
         
         # Count tokens to estimate cost
         tokens = len(self.tokenizer.encode(table_markdown))
         
-        # Build context string
-        context_str = ""
-        if context.get('section_name'):
-            context_str += f"Section: {context['section_name']}\n"
-        if context.get('filing_type'):
-            context_str += f"Filing: {context['filing_type']}\n"
-        if context.get('company'):
-            context_str += f"Company: {context['company']}\n"
+        # Build comprehensive context string with all available metadata
+        context_parts = []
         
-        prompt = f"""{context_str}
-Summarize this table in 2-3 clear sentences. Focus on:
-1. What data the table shows
-2. Key trends or notable values
-3. Any significant changes or comparisons
+        if context.get('company'):
+            context_parts.append(f"Company: {context['company']}")
+        if context.get('ticker'):
+            context_parts.append(f"Ticker: {context['ticker']}")
+        if context.get('filing_type'):
+            context_parts.append(f"Filing Type: {context['filing_type']}")
+        if context.get('filing_year'):
+            context_parts.append(f"Filing Year: {context['filing_year']}")
+        if context.get('fiscal_quarter'):
+            context_parts.append(f"Fiscal Quarter: Q{context['fiscal_quarter']}")
+        if context.get('section'):
+            context_parts.append(f"Section: {context['section']}")
+        if context.get('section_name'):
+            context_parts.append(f"Section Name: {context['section_name']}")
+        
+        context_str = "\n".join(context_parts)
+        
+        prompt = f"""Context:
+{context_str}
+
+Task: Analyze and summarize the table below.
+
+First, provide a brief explanation (1 sentence) of what this table represents in the context of the filing.
+Then, summarize the table data in 2-3 clear sentences. Focus on:
+1. What specific data the table shows (e.g., revenue breakdown, expenses, assets)
+2. Key values, trends, or notable figures
+3. Any significant changes, comparisons, or patterns
 
 Table ({tokens} tokens):
 {table_markdown}
 
-Provide a concise summary (max {self.max_summary_length} characters):"""
+Provide your response in this format:
+[Table Explanation]: [One sentence explaining what this table is]
+[Summary]: [2-3 sentences summarizing the data]
+
+Max length: {self.max_summary_length} characters:"""
         
         return prompt
     

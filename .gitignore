@@ -3,3 +3,5 @@
 /.venv
 .env
 /edgartools
+gcp-credentials.json
+/Data_Pipeline/.venv_airflow

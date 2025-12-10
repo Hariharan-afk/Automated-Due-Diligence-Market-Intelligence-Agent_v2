@@ -9,7 +9,7 @@
   "companies": {
     "MSFT": {
       "classification": "large",
-      "coverage_ratio": 1.0765171503957784,
+      "coverage_ratio": 1.0227848101265822,
       "base_boost": 0.0,
       "source_boosts": {
         "sec": 0.0,
@@ -18,13 +18,13 @@
       },
       "metadata": {
         "completeness": 1.0,
-        "total_chunks": 204
+        "total_chunks": 202
       },
-      "updated_at": "2025-12-09T13:05:37.032332"
+      "updated_at": "2025-12-09T23:45:39.499630"
     },
     "GOOGL": {
       "classification": "large",
-      "coverage_ratio": 1.1715039577836412,
+      "coverage_ratio": 1.2455696202531645,
       "base_boost": 0.0,
       "source_boosts": {
         "sec": 0.0,
@@ -33,13 +33,43 @@
       },
       "metadata": {
         "completeness": 1.0,
-        "total_chunks": 222
+        "total_chunks": 246
       },
-      "updated_at": "2025-12-09T13:05:37.032332"
+      "updated_at": "2025-12-09T23:45:39.501139"
     },
     "TSLA": {
+      "classification": "medium",
+      "coverage_ratio": 0.9265822784810127,
+      "base_boost": 0.12,
+      "source_boosts": {
+        "sec": 0.096,
+        "wikipedia": 0.072,
+        "news": 0.144
+      },
+      "metadata": {
+        "completeness": 1.0,
+        "total_chunks": 183
+      },
+      "updated_at": "2025-12-09T23:45:39.502142"
+    },
+    "NVDA": {
+      "classification": "medium",
+      "coverage_ratio": 1.0126582278481013,
+      "base_boost": 0.12,
+      "source_boosts": {
+        "sec": 0.096,
+        "wikipedia": 0.072,
+        "news": 0.144
+      },
+      "metadata": {
+        "completeness": 1.0,
+        "total_chunks": 200
+      },
+      "updated_at": "2025-12-09T23:45:39.502142"
+    },
+    "AAPL": {
       "classification": "small",
-      "coverage_ratio": 0.9182058047493403,
+      "coverage_ratio": 0.8810126582278481,
       "base_boost": 0.25,
       "source_boosts": {
         "sec": 0.2,
@@ -50,41 +80,11 @@
         "completeness": 1.0,
         "total_chunks": 174
       },
-      "updated_at": "2025-12-09T13:05:37.032332"
-    },
-    "NVDA": {
-      "classification": "medium",
-      "coverage_ratio": 1.029023746701847,
-      "base_boost": 0.12,
-      "source_boosts": {
-        "sec": 0.096,
-        "wikipedia": 0.072,
-        "news": 0.144
-      },
-      "metadata": {
-        "completeness": 1.0,
-        "total_chunks": 195
-      },
-      "updated_at": "2025-12-09T13:05:37.033835"
-    },
-    "AAPL": {
-      "classification": "medium",
-      "coverage_ratio": 0.9234828496042217,
-      "base_boost": 0.12,
-      "source_boosts": {
-        "sec": 0.096,
-        "wikipedia": 0.072,
-        "news": 0.144
-      },
-      "metadata": {
-        "completeness": 1.0,
-        "total_chunks": 175
-      },
-      "updated_at": "2025-12-09T13:05:37.033835"
+      "updated_at": "2025-12-09T23:45:39.503142"
     },
     "AMZN": {
       "classification": "small",
-      "coverage_ratio": 0.8812664907651715,
+      "coverage_ratio": 0.9113924050632911,
       "base_boost": 0.25,
       "source_boosts": {
         "sec": 0.2,
@@ -93,10 +93,10 @@
       },
       "metadata": {
         "completeness": 1.0,
-        "total_chunks": 167
+        "total_chunks": 180
       },
-      "updated_at": "2025-12-09T13:05:37.034841"
+      "updated_at": "2025-12-09T23:45:39.503142"
     }
   },
-  "last_updated": "2025-12-09T13:05:37.034841"
+  "last_updated": "2025-12-09T23:45:39.503142"
 }
