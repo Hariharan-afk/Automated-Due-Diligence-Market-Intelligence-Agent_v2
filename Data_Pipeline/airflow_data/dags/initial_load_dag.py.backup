@@ -69,21 +69,29 @@ def process_company_data(ticker, company_name, cik, **context):
     import os
     from dotenv import load_dotenv
     
-    # Setup paths
-    project_root = Path(__file__).parent.parent.parent
-    sys.path.insert(0, str(project_root))
+    # Setup paths for Docker container environment
+    # In container: DAG is at /opt/airflow/dags/initial_load_dag.py
+    #               Data_Pipeline is at /opt/airflow/Data_Pipeline/
+    #               src module is at /opt/airflow/Data_Pipeline/src/
     
-    load_dotenv()
+    # Add Data_Pipeline to Python path so we can import src.*
+    data_pipeline_path = '/opt/airflow/Data_Pipeline'
+    if data_pipeline_path not in sys.path:
+        sys.path.insert(0, data_pipeline_path)
     
-    # Import processing components
-    from src.data_ingestion.sec_fetcher import SECFetcher
-    from src.data_ingestion.wikipedia_fetcher import WikipediaFetcher
+    # Load environment variables from /opt/airflow/.env
+    load_dotenv(dotenv_path='/opt/airflow/.env')
+    
+    # Import connectors (actual classes that exist)
+    from src.cloud.postgres_connector import PostgresConnector
+    from src.cloud.qdrant_connector import QdrantConnector
+    from src.cloud.gcs_connector import GCSConnector
+    
+    # Import processors - NOTE: These expect Manager classes but we have Connectors
+    # We'll use connectors directly instead
     from src.data_ingestion.news_fetcher import NewsFetcher
     from src.data_processing.chunker import TextChunker
-    from src.data_processing.table_processor import TableProcessor
-    from src.utils.table_summarizer import GroqTableSummarizer
     from src.embedding import Embedder
-    from src.cloud import GCSConnector, QdrantConnector
     
     print(f"\n{'='*80}")
     print(f"PROCESSING: {company_name} ({ticker})")
@@ -92,27 +100,55 @@ def process_company_data(ticker, company_name, cik, **context):
     # Initialize components
     print("🔧 Initializing components...")
     
+    # Initialize PostgreSQL manager
+    postgres_mgr = PostgresManager(
+        host=os.getenv('POSTGRES_HOST'),
+        port=int(os.getenv('POSTGRES_PORT', 5432)),
+        database=os.getenv('POSTGRES_DB'),
+        user=os.getenv('POSTGRES_USER'),
+        password=os.getenv('POSTGRES_PASSWORD')
+    )
+    
+    # Initialize Qdrant manager
+    qdrant_mgr = QdrantManager(
+        url=os.getenv('QDRANT_URL'),
+        api_key=os.getenv('QDRANT_API_KEY')
+    )
+    
+    # Initialize GCS connector (for news processing)
     gcs = GCSConnector(
         bucket_name=os.getenv('GCP_BUCKET_NAME'),
         project_id=os.getenv('GCP_PROJECT_ID'),
         credentials_path=os.getenv('GCP_CREDENTIALS_PATH')
     )
     
-    qdrant = QdrantConnector(
-        url=os.getenv('QDRANT_URL'),
-        api_key=os.getenv('QDRANT_API_KEY')
+    # Initialize embedder and LLM client
+    embedder = FinancialEmbedder()
+    llm_client = LLMClient()
+    
+    # Initialize processors with comprehensive metadata support
+    sec_processor = SECProcessor(
+        postgres_manager=postgres_mgr,
+        qdrant_manager=qdrant_mgr,
+        embedder=embedder,
+        llm_client=llm_client
     )
     
-    embedder = Embedder()
-    chunker = TextChunker(chunk_size=512, overlap=128)
-    table_summarizer = GroqTableSummarizer(api_key=os.getenv('GROQ_API_KEY'))
-    table_processor = TableProcessor(summarizer=table_summarizer, min_table_size=0)
+    wiki_processor = WikipediaProcessor(
+        postgres_manager=postgres_mgr,
+        qdrant_manager=qdrant_mgr,
+        embedder=embedder
+    )
+    
+    # For news processing (still manual for now)
+    news_embedder = Embedder()
+    news_chunker = TextChunker(chunk_size=512, overlap=128)
     
     collection_name = os.getenv('QDRANT_COLLECTION', 'company_data')
     
     # Ensure collection exists
     try:
-        qdrant.create_collection(
+        qdrant_mgr.qdrant_client.create_collection(
             collection_name=collection_name,
             vector_size=1024,
             distance='Cosine',
@@ -130,77 +166,26 @@ def process_company_data(ticker, company_name, cik, **context):
     # === 1. Process SEC Filings ===
     print("\n📄 Processing SEC Filings...")
     try:
-        sec_fetcher = SECFetcher(user_identity=os.getenv('SEC_API_KEY', 'your.email@example.com'))
-        
-        # Fetch 2023+ filings
-        filings = sec_fetcher.fetch_filings_by_cik(
-            cik=cik,
+        # Use SECProcessor for comprehensive metadata and state tracking
+        result = sec_processor.process_company_filings(
+            ticker=ticker,
             filing_types=['10-K', '10-Q'],
             start_date='2023-01-01',
-            end_date=datetime.now().strftime('%Y-%m-%d')
+            skip_existing=True  # Skip filings already in PostgreSQL
         )
         
-        stats['sec']['filings'] = len(filings)
-        print(f"   Found {len(filings)} filings")
+        stats['sec']['filings'] = result.get('processed', 0)
+        stats['sec']['chunks'] = sum(
+            d.get('total_chunks', 0) 
+            for d in result.get('details', []) 
+            if d.get('status') == 'success'
+        )
         
-        # Process each filing
-        for filing in filings:
-            print(f"   Processing {filing['filing_type']} - {filing['filing_date']}")
-            
-            for section in filing['sections']:
-                # Process tables
-                processed_text, tables = table_processor.process_section(
-                    section_html=section.get('section_html_doc'),
-                    section_text=section['section_text'],
-                    metadata={'ticker': ticker, 'filing_type': filing['filing_type']}
-                )
-                
-                stats['sec']['tables'] += len(tables)
-                
-                # Chunk text
-                chunks = chunker.chunk_text(processed_text)
-                if not chunks:
-                    continue
-                
-                stats['sec']['chunks'] += len(chunks)
-                
-                # Generate embeddings
-                embeddings = embedder.embed_documents(chunks, batch_size=32)
-                
-                # Upload raw data to GCS
-                gcs_path = f"raw/sec/{ticker}/{filing['fiscal_year']}/{filing['accession_number']}_section_{section['section_code']}.json"
-                gcs.upload_data(
-                    data={
-                        'filing_metadata': {
-                            'ticker': ticker,
-                            'filing_type': filing['filing_type'],
-                            'accession_number': filing['accession_number']
-                        },
-                        'section': {'code': section['section_code'], 'name': section['section_name']},
-                        'tables': tables,
-                        'chunks': chunks
-                    },
-                    gcs_path=gcs_path
-                )
-                
-                # Upload to Qdrant with metadata
-                current_time = datetime.utcnow().isoformat() + 'Z'
-                payloads = []
-                for i, chunk_text in enumerate(chunks):
-                    chunk_tokens = len(chunker.encoding.encode(chunk_text))
-                    payloads.append({
-                        'chunk_id': f"{ticker}_sec_{filing['accession_number']}_{section['section_code']}_{i}",
-                        'ticker': ticker,
-                        'company': company_name,
-                        'data_source': 'sec',
-                        'filing_type': filing['filing_type'],
-                        'section': section['section_code'],
-                        'chunk_text': chunk_text,
-                        'chunk_tokens': chunk_tokens,
-                        'created_at': current_time
-                    })
-                
-                qdrant.upload_vectors(collection_name=collection_name, vectors=embeddings, payloads=payloads)
+        print(f"   ✓ Processed {stats['sec']['filings']} filings")
+        print(f"   ✓ Generated {stats['sec']['chunks']} chunks")
+        
+        if result.get('failed', 0) > 0:
+            print(f"   ⚠️  {result['failed']} filings failed")
     
     except Exception as e:
         print(f"   ❌ SEC Error: {e}")
@@ -208,43 +193,22 @@ def process_company_data(ticker, company_name, cik, **context):
     # === 2. Process Wikipedia ===
     print("\n📖 Processing Wikipedia...")
     try:
-        wiki_fetcher = WikipediaFetcher()
-        page = wiki_fetcher.fetch(company_name)
-        
-        stats['wikipedia']['pages'] = 1
-        
-        # Chunk content
-        chunks = chunker.chunk_text(page['text_content'])
-        stats['wikipedia']['chunks'] = len(chunks)
-        
-        # Generate embeddings
-        embeddings = embedder.embed_documents(chunks, batch_size=32)
-        
-        # Upload to GCS
-        gcs_path = f"raw/wikipedia/{ticker}/{page['page_title'].replace(' ', '_')}.json"
-        gcs.upload_data(
-            data={'page_metadata': {'title': page['page_title']}, 'content': page['text_content'], 'chunks': chunks},
-            gcs_path=gcs_path
+        # Use WikipediaProcessor for comprehensive metadata and state tracking
+        result = wiki_processor.process_page(
+            ticker=ticker,
+            force_refresh=False  # Skip if not changed
         )
         
-        # Upload to Qdrant
-        current_time = datetime.utcnow().isoformat() + 'Z'
-        payloads = []
-        for i, chunk_text in enumerate(chunks):
-            chunk_tokens = len(chunker.encoding.encode(chunk_text))
-            payloads.append({
-                'chunk_id': f"{ticker}_wiki_{i}",
-                'ticker': ticker,
-                'company': company_name,
-                'data_source': 'wikipedia',
-                'page_title': page['page_title'],
-                'chunk_text': chunk_text,
-                'chunk_tokens': chunk_tokens,
-                'created_at': current_time
-            })
-        
-        qdrant.upload_vectors(collection_name=collection_name, vectors=embeddings, payloads=payloads)
-        
+        if result['status'] == 'success':
+            stats['wikipedia']['pages'] = 1
+            stats['wikipedia']['chunks'] = result.get('total_chunks', 0)
+            print(f"   ✓ Processed Wikipedia page")
+            print(f"   ✓ Generated {stats['wikipedia']['chunks']} chunks")
+        elif result['status'] == 'skipped':
+            print(f"   ℹ️  Wikipedia page unchanged, skipped")
+        else:
+            print(f"   ❌ Failed: {result.get('error', 'Unknown error')}")
+    
     except Exception as e:
         print(f"   ❌ Wikipedia Error: {e}")
     

@@ -1,6 +1,3 @@
-pyyaml 
-tqdm
-
 # sec filings
 edgartools
 
@@ -15,9 +12,12 @@ tiktoken
 langchain
 langchain-text-splitters
 
+# wikipedia & news
 dotenv
 wikipedia-api
 newspaper3k
 lxml_html_clean
 Levenshtein
 fuzzywuzzy
+
+# 

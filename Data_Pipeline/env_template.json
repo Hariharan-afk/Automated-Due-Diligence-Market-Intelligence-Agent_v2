@@ -1,0 +1,15 @@
+{
+    "SEC_API_KEY": "your.email@example.com",
+    "GROQ_API_KEY": "gsk_...",
+    "QDRANT_URL": "https://xyz.us-east4-0.gcp.cloud.qdrant.io:6333",
+    "QDRANT_API_KEY": "th...",
+    "QDRANT_COLLECTION": "company_data",
+    "GCP_BUCKET_NAME": "your-gcs-bucket-name",
+    "GCP_PROJECT_ID": "your-gcp-project-id",
+    "GCP_CREDENTIALS_PATH": "/home/airflow/gcs/data/gcp-credentials.json",
+    "POSTGRES_HOST": "aws-0-us-east-1.pooler.supabase.com",
+    "POSTGRES_DB": "postgres",
+    "POSTGRES_USER": "postgres.xyz",
+    "POSTGRES_PASSWORD": "password",
+    "POSTGRES_PORT": "5432"
+}

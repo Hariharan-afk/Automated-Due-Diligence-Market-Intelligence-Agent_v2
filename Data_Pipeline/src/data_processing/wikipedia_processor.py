@@ -118,23 +118,21 @@ class WikipediaProcessor:
             
             # Chunk text
             chunks = self.chunker.chunk_text(full_text, preserve_tables=True)
+            total_chunks = len(chunks)
             
-            logger.info(f"Chunked Wikipedia into {len(chunks)} chunks")
+            logger.info(f"Chunked Wikipedia into {total_chunks} chunks")
             
             # Embed chunks
             embeddings = self.embedder.embed_chunks(chunks, show_progress=True)
             
-            # Prepare metadata
-            base_metadata = {
-                'data_source_type': 'wikipedia',
-                'fetched_date': datetime.now().isoformat(),
-                'ticker': ticker,
-                'company_name': company.name,
-                'page_title': page_data['page_title'],
-                'page_url': page_data.get('page_url', ''),
-                'revision_id': current_revision,
-                'wikipedia_version': str(current_revision)
-            }
+            # Construct GCS path
+            gcs_path = f"raw/wikipedia/{ticker}/{page_data['page_title'].replace(' ', '_')}.json"
+            
+            # Get timestamps
+            current_time = datetime.utcnow().isoformat() + 'Z'
+            last_modified = page_data.get('timestamp') or page_data.get('last_modified')
+            if last_modified and not last_modified.endswith('Z'):
+                last_modified += 'Z'
             
             # Prepare for Qdrant
             qdrant_chunks = []
@@ -146,10 +144,49 @@ class WikipediaProcessor:
                     index=i
                 )
                 
+                # Calculate token count
+                chunk_tokens = len(self.chunker.encoding.encode(chunk)) if hasattr(self.chunker, 'encoding') else len(chunk) // 4
+                
+                # Enhanced metadata structure (matching test_apple_2024.py)
                 metadata = {
-                    **base_metadata,
-                    'chunk_length': len(chunk),
-                    'chunk_index': i
+                    # ===== Core Identifiers =====
+                    'ticker': ticker,
+                    'company_name': company.name,
+                    'source': 'wikipedia',  # Was 'data_source_type'
+                    
+                    # ===== Page Metadata =====
+                    'page_title': page_data['page_title'],
+                    'page_url': page_data.get('page_url', ''),
+                    'revision_id': current_revision,
+                    'last_modified': last_modified,  # NEW
+                    
+                    # ===== Chunk Metadata =====
+                    'chunk_index': i,
+                    'total_chunks': total_chunks,  # NEW
+                    'chunk_size': len(chunk),  # Was 'chunk_length'
+                    'chunk_tokens': chunk_tokens,  # NEW
+                    'chunk_text': chunk,  # For compatibility
+                    
+                    # ===== Section Metadata =====  
+                    'section': 'Introduction',  # TODO: Track during parsing
+                    
+                    # ===== Table Metadata =====
+                    'has_tables': False,  # NEW (Wikipedia doesn't have tables in this impl)
+                    'table_references': [],  # NEW
+                    
+                    # ===== Storage =====
+                    'gcs_path': gcs_path,  # NEW
+                    
+                    # ===== Timestamps =====
+                    'processed_date': current_time,  # NEW
+                    'fetched_date': current_time,
+                    'created_at': current_time,  # NEW
+                    'last_revision_check': current_time,  # NEW
+                    'expires_at': None,  # Wikipedia doesn't expire
+                    
+                    # ===== Bias Mitigation =====
+                    'boost_factor': 0.12,  # NEW (default for medium companies)
+                    'coverage_classification': 'medium'  # NEW
                 }
                 
                 qdrant_chunks.append({
@@ -164,7 +201,7 @@ class WikipediaProcessor:
                 logger.info(f"Deleting old Wikipedia chunks for {ticker}")
                 self.qdrant.delete_by_filter({
                     'ticker': ticker,
-                    'data_source_type': 'wikipedia'
+                    'source': 'wikipedia'  # Was 'data_source_type'
                 })
             
             # Store new chunks in Qdrant

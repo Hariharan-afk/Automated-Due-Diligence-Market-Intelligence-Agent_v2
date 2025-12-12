@@ -1,0 +1,10 @@
+def flock(fd, operation):
+    pass
+
+def ioctl(fd, request, arg=0, mutate_flag=True):
+    pass
+
+LOCK_EX = 1
+LOCK_SH = 2
+LOCK_NB = 4
+LOCK_UN = 8

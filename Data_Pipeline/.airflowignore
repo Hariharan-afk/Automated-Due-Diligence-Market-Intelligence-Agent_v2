@@ -1,0 +1,13 @@
+# Ignore non-DAG files to speed up parsing
+src/
+scripts/
+configs/
+data/
+logs/
+tests/
+__pycache__/
+*.md
+*.json
+*.yaml
+*.txt
+.env

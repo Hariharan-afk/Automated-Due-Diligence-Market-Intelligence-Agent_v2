@@ -239,25 +239,43 @@ class SECProcessor:
         filing_metadata: Dict[str, Any]
     ) -> List[Dict[str, Any]]:
         """
-        Process chunks from a section
+        Process chunks from a section with comprehensive metadata
         
         Steps:
         1. Detect financial tables
         2. Generate LLM headers for high-confidence tables
         3. Sub-chunk large chunks if needed
-        4. Add metadata
+        4. Add comprehensive metadata (matching test_apple_2024.py structure)
         
         Args:
             chunks: List of text chunks (split by ---)
-            section_code: Section code
-            section_name: Section name
-            filing_metadata: Filing metadata
+            section_code: Section code (e.g., 'Item7')
+            section_name: Section name (e.g., 'MD&A')
+            filing_metadata: Filing metadata dict
         
         Returns:
-            List of processed chunk dicts with metadata
+            List of processed chunk dicts with comprehensive metadata
         """
         processed_chunks = []
+        ticker = filing_metadata['ticker']
+        accession = filing_metadata['accession_number']
         
+        # Calculate total chunks first (needed for metadata)
+        temp_chunks_count = 0
+        for chunk in chunks:
+            table_analysis = self.table_detector.analyze_chunk(chunk)
+            is_financial_table = table_analysis['is_financial_table']
+            preserve_tables = is_financial_table
+            sub_chunks = self.chunker.chunk_text(chunk, preserve_tables=preserve_tables)
+            temp_chunks_count += len(sub_chunks)
+        
+        total_chunks = temp_chunks_count
+        chunk_counter = 0
+        
+        # Construct GCS path
+        gcs_path = f"raw/sec/{ticker}/{filing_metadata['fiscal_year']}/{accession}_section_{section_code}.json"
+        
+        # Process chunks (second pass)
         for i, chunk in enumerate(chunks):
             # Detect if chunk contains financial table
             table_analysis = self.table_detector.analyze_chunk(chunk)
@@ -281,39 +299,84 @@ class SECProcessor:
                 
                 if llm_header:
                     # Prepend header to chunk
-                    chunk = f"**Table Description:** {llm_header}\n\n{chunk}"
+                    chunk = f"**Table Description:** {llm_header}\\n\\n{chunk}"
             
             # Sub-chunk if needed (but preserve tables as single chunks)
             preserve_tables = is_financial_table
             sub_chunks = self.chunker.chunk_text(chunk, preserve_tables=preserve_tables)
             
             # Add metadata to each sub-chunk
+            current_time = datetime.utcnow().isoformat() + 'Z'
+            
             for j, sub_chunk in enumerate(sub_chunks):
-                # Base metadata
+                # Calculate token count
+                chunk_tokens = len(self.chunker.encoding.encode(sub_chunk)) if hasattr(self.chunker, 'encoding') else len(sub_chunk) // 4
+                
+                # Extract table references from chunk
+                # (This requires TableProcessor - simplified for now)
+                table_references = []
+                if is_financial_table:
+                    # Generate table reference for this chunk
+                    table_ref = f"TABLE_{ticker}_{accession}_{section_code}_{i}"
+                    table_references = [table_ref]
+                
+                # Enhanced metadata structure (matching test_apple_2024.py)
                 metadata = {
-                    'data_source_type': 'sec',
-                    'fetched_date': datetime.now().isoformat(),
+                    # ===== Core Identifiers =====
+                    'ticker': ticker,
+                    'company_name': filing_metadata['company_name'],  # Was 'company'
+                    'source': 'sec',  # Was 'data_source_type'
+                    
+                    # ===== Filing Metadata =====
                     'filing_type': filing_metadata['filing_type'],
+                    'filing_date': filing_metadata['filing_date'],  # NEW
                     'fiscal_year': filing_metadata['fiscal_year'],
-                    'ticker': filing_metadata['ticker'],
-                    'cik': filing_metadata['cik'],
-                    'company_name': filing_metadata['company_name'],
-                    'section_item': section_code,
-                    'section_item_name': section_name,
-                    'chunk_length': len(sub_chunk),
-                    'contains_financial_table': is_financial_table,
+                    'fiscal_quarter': filing_metadata.get('fiscal_quarter'),  # Was 'quarter'
+                    'accession_number': accession,  # NEW
+                    'filing_url': filing_metadata.get('filing_url', ''),  # NEW
+                    
+                    # ===== Section Metadata =====
+                    'section_code': section_code,  # Was 'section_item'
+                    'section_title': section_name,  # Was 'section_item_name'
+                    
+                    # ===== Chunk Metadata =====
+                    'chunk_index': chunk_counter,  # Global index
+                    'total_chunks': total_chunks,  # NEW
+                    'chunk_size': len(sub_chunk),  # Was 'chunk_length'
+                    'chunk_tokens': chunk_tokens,  # Keep for compatibility
+                    
+                    # ===== Table Metadata =====
+                    'has_tables': is_financial_table,  # Was 'contains_financial_table'
+                    'table_references': table_references,  # NEW
                     'table_confidence': table_confidence if is_financial_table else 0.0,
-                    'has_llm_header': llm_header is not None
+                    'has_llm_header': llm_header is not None,
+                    
+                    # ===== Storage =====
+                    'gcs_path': gcs_path,  # NEW
+                    
+                    # ===== Timestamps =====
+                    'processed_date': current_time,  # NEW
+                    'fetched_date': current_time,  # Keep for backward compatibility
+                    'created_at': current_time,  # NEW
+                    'expires_at': None,  # SEC filings don't expire
+                    
+                    # ===== Bias Mitigation =====
+                    # NOTE: boost_factor calculation requires BaselineCalculator
+                    # For now, use default value. Will be enhanced in next iteration.
+                    'boost_factor': 0.0,  # Default for large companies
+                    'coverage_classification': 'medium'  # Will be calculated dynamically
                 }
                 
-                # Add quarter if 10-Q
-                if filing_metadata.get('fiscal_quarter'):
-                    metadata['quarter'] = filing_metadata['fiscal_quarter']
+                # Store cik for completeness
+                if 'cik' in filing_metadata:
+                    metadata['cik'] = filing_metadata['cik']
                 
                 processed_chunks.append({
                     'chunk_text': sub_chunk,
                     'metadata': metadata
                 })
+                
+                chunk_counter += 1
         
         logger.info(f"Processed {len(chunks)} initial chunks → {len(processed_chunks)} final chunks")
         

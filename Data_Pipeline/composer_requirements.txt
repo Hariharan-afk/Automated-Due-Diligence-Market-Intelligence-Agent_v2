@@ -1,0 +1,33 @@
+# Core processing
+edgartools>=0.0.46
+pyyaml
+tqdm
+pandas
+newspaper3k
+lxml_html_clean
+wikipedia-api
+Levenshtein
+fuzzywuzzy
+apache-airflow-providers-fab
+
+# LLM & Summarization
+groq
+tiktoken
+langchain
+langchain-text-splitters
+
+# Embeddings (Heavy - verify Composer worker size)
+sentence-transformers>=2.2.2
+torch --extra-index-url https://download.pytorch.org/whl/cpu
+
+# Vector DB & Storage
+qdrant-client
+google-cloud-storage
+
+# Database
+psycopg2-binary
+sqlalchemy
+
+# Utilities
+python-dotenv
+tenacity

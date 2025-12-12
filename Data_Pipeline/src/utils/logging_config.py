@@ -4,6 +4,7 @@
 import logging
 import sys
 import io
+import os
 from pathlib import Path
 from datetime import datetime
 from logging.handlers import RotatingFileHandler
@@ -24,13 +25,21 @@ def setup_logging(
         log_to_file: Whether to log to file
         log_to_console: Whether to log to console
     """
+    # Skip custom logging setup when running inside Airflow
+    # Airflow manages its own logging and custom setup causes recursion errors
+    if 'AIRFLOW_HOME' in os.environ or 'AIRFLOW__CORE__DAGS_FOLDER' in os.environ:
+        return
+    
     # FIX: Set console to UTF-8 for Windows Unicode support
     if sys.platform == 'win32':
         try:
-            sys.stdout.reconfigure(encoding='utf-8')
-        except AttributeError:
-            # Python < 3.7
-            sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+            if hasattr(sys.stdout, 'reconfigure'):
+                sys.stdout.reconfigure(encoding='utf-8')
+            elif hasattr(sys.stdout, 'buffer'):
+                sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+        except Exception:
+            # sys.stdout might be replaced (e.g. by Airflow) and not support these operations
+            pass
     
     # Create log directory
     if log_dir is None:
